@@ -703,25 +703,25 @@ theme.set_highlights = function()
    hl(0, "@lang.python", { link = "Identifier" })
 
    -- markdown
-   vim.api.nvim_set_hl(0, "@text.title", { link = "" })                 -- title text after #. This should be unset the link, so the below codes work.
-   vim.api.nvim_set_hl(0, "@punctuation.special", { fg = "#e8ab53" })   -- # ## ### #### ...
-   vim.api.nvim_set_hl(0, "@text.title.1", { fg = "#e8ab53", underline = true, bold = true })
-   vim.api.nvim_set_hl(0, "@text.title.2", { fg = "#e8ab53", bold = true })
-   vim.api.nvim_set_hl(0, "@text.title.3", { fg = "#e8ab53" })
-   vim.api.nvim_set_hl(0, "@text.title.4", { fg = "#e8ab53" })
-   vim.api.nvim_set_hl(0, "@text.title.5", { fg = "#e8ab53" })
-   vim.api.nvim_set_hl(0, "@text.title.6", { fg = "#e8ab53" })
-   vim.api.nvim_set_hl(0, "@text.title.1.marker", { link = "Comment" })
-   vim.api.nvim_set_hl(0, "@text.title.2.marker", { link = "Comment" })
-   vim.api.nvim_set_hl(0, "@text.title.3.marker", { link = "Comment" })
-   vim.api.nvim_set_hl(0, "@text.title.4.marker", { link = "Comment" })
-   vim.api.nvim_set_hl(0, "@text.title.5.marker", { link = "Comment" })
-   vim.api.nvim_set_hl(0, "@text.title.6.marker", { link = "Comment" })
-   vim.api.nvim_set_hl(0, "@text.title.6.marker", { link = "Comment" })
+   hl(0, "@text.title", { link = "" })                 -- title text after #. This should be unset the link, so the below codes work.
+   hl(0, "@punctuation.special", { fg = "#e8ab53" })   -- # ## ### #### ...
+   hl(0, "@text.title.1", { fg = "#e8ab53", underline = true, bold = true })
+   hl(0, "@text.title.2", { fg = "#e8ab53", bold = true })
+   hl(0, "@text.title.3", { fg = "#e8ab53" })
+   hl(0, "@text.title.4", { fg = "#e8ab53" })
+   hl(0, "@text.title.5", { fg = "#e8ab53" })
+   hl(0, "@text.title.6", { fg = "#e8ab53" })
+   hl(0, "@text.title.1.marker", { link = "Comment" })
+   hl(0, "@text.title.2.marker", { link = "Comment" })
+   hl(0, "@text.title.3.marker", { link = "Comment" })
+   hl(0, "@text.title.4.marker", { link = "Comment" })
+   hl(0, "@text.title.5.marker", { link = "Comment" })
+   hl(0, "@text.title.6.marker", { link = "Comment" })
+   hl(0, "@text.title.6.marker", { link = "Comment" })
 
-   vim.api.nvim_set_hl(0, "@text.strong", { fg = "#6a9955", bold = true })
-   vim.api.nvim_set_hl(0, "TableCell", { fg = "#e8ab53" })       -- Doesn't work.
-   vim.api.nvim_set_hl(0, "@text.quote", { link = "Comment" })   -- >> << quatation
+   hl(0, "@text.strong", { fg = "#6a9955", bold = true })
+   hl(0, "TableCell", { fg = "#e8ab53" })       -- Doesn't work.
+   hl(0, "@text.quote", { link = "Comment" })   -- >> << quatation
 end
 
 return theme
