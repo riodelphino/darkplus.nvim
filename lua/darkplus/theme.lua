@@ -104,6 +104,9 @@ theme.set_highlights = function()
    hl(0, "PreCondit", { fg = c.purple, bg = "NONE" })
    hl(0, "Special", { fg = c.orange, bg = "NONE" })
 
+   -- All Floating Windows
+   hl(0, "Pmenu", { link = "", fg = c.alt_fg, bg = c.dark_gray })
+
    -- Treesitter
    hl(0, "@comment", { fg = c.green, bg = "NONE", italic = true })
    hl(0, "@none", { fg = "NONE", bg = "NONE" })
@@ -299,6 +302,24 @@ theme.set_highlights = function()
    hl(0, "LspCodeLens", { fg = c.context, bg = "NONE", italic = true })
    hl(0, "LspCodeLensSeparator", { fg = c.context, bg = "NONE", italic = true })
 
+   -- LspInfo
+   hl(0, "LspInfo")
+   hl(0, "LspInfoTip", { link = "Comment" })
+   hl(0, "LspInfoTitle", { link = "Title" })
+   hl(0, "LspInfoBorder", { link = "Label" })
+   hl(0, "LspInfoList", { link = "Function" })
+   hl(0, "LspInfoFiletype", { link = "Type" })
+   hl(0, "LspInfoFiletypeList", {})          -- cleared
+   hl(0, "LspInfoListList", {})              -- cleared
+   hl(0, "LspInfoBorder", { fg = c.gray })   -- "#777777"
+
+   -- NullLsInfo
+   -- NullLsInfoHeader ... Window header
+   -- NullLsInfoTitle ... Titles
+   -- NullLsInfoBorder ...  Window border
+   -- NullLsInfoSources ... Sources names
+   hl(0, "NullLsInfoBorder", { fg = c.gray })   -- "#777777"
+
    -- Quickscope
    hl(0, "QuickScopePrimary", { fg = "#ff007c", bg = "NONE", underline = true })
    hl(0, "QuickScopeSecondary", { fg = "#00dfff", bg = "NONE", underline = true })
@@ -306,8 +327,8 @@ theme.set_highlights = function()
    -- Telescope
    hl(0, "TelescopeSelection", { fg = "NONE", bg = c.ui2_blue })
    hl(0, "TelescopeSelectionCaret", { fg = c.red, bg = c.ui2_blue })
-   hl(0, "TelescopeMatching", { fg = c.info, bg = "NONE", bold = true, italic = true })
-   hl(0, "TelescopeBorder", { fg = c.alt_fg, bg = "NONE" })
+   hl(0, "TelescopeMatching", { fg = c.info, bg = c.dark_gray, bold = true, italic = true })
+   hl(0, "TelescopeBorder", { fg = c.alt_fg, bg = c.gray })
    hl(0, "TelescopeNormal", { fg = c.fg, bg = c.menu_bg })
    hl(0, "TelescopePromptPrefix", { fg = c.hint, bg = "NONE" })
    hl(0, "TelescopePromptTitle", { fg = c.ui_orange, bg = "NONE", bold = true })
@@ -393,7 +414,7 @@ theme.set_highlights = function()
    -- Bookmarks
    hl(0, "BookmarkSign", { fg = c.sign_change, bg = "NONE" })
    hl(0, "BookmarkAnnotationSign", { fg = c.yellow, bg = "NONE" })
-   hl(0, "BookmarkLine", { fg = c.ui2_blue, bg = "NONE" })
+   hl(0, "BookmarkLine", { fg = c.ui2_blue, bg = "" })   -- * Clear the bg color of bookmarked line
    hl(0, "BookmarkAnnotationLine", { fg = c.ui2_blue, bg = "NONE" })
 
    -- Bqf
@@ -430,6 +451,11 @@ theme.set_highlights = function()
    hl(0, "CmpItemKindReference", { fg = c.light_blue, bg = "NONE" })
    hl(0, "CmpItemKindOperator", { fg = c.fg, bg = "NONE" })
    hl(0, "CmpItemKindTypeParameter", { fg = c.light_blue, bg = "NONE" })
+   hl(0, "CmpItemMenuDefault", { fg = c.gray })
+   hl(0, "CmpNormal", { link = "Pmenu" })
+   hl(0, "CmpFloatBorder", { fg = c.gray })
+   hl(0, "CmpCursorLine", { fg = "NONE", bg = c.ui_blue })
+   hl(0, "CmpSearch", { link = "NONE" })
 
    -- Navic
    hl(0, "NavicIconsFile", { link = "CmpItemKindFile" })
@@ -672,6 +698,30 @@ theme.set_highlights = function()
    hl(0, "tomlTSProperty", { fg = c.blue, bg = "NONE" })
    hl(0, "zshKSHFunction", { link = "Function" })
    hl(0, "zshVariableDef", { link = "Constant" })
+
+   -- python
+   hl(0, "@lang.python", { link = "Identifier" })
+
+   -- markdown
+   vim.api.nvim_set_hl(0, "@text.title", { link = "" })                 -- title text after #. This should be unset the link, so the below codes work.
+   vim.api.nvim_set_hl(0, "@punctuation.special", { fg = "#e8ab53" })   -- # ## ### #### ...
+   vim.api.nvim_set_hl(0, "@text.title.1", { fg = "#e8ab53", underline = true, bold = true })
+   vim.api.nvim_set_hl(0, "@text.title.2", { fg = "#e8ab53", bold = true })
+   vim.api.nvim_set_hl(0, "@text.title.3", { fg = "#e8ab53" })
+   vim.api.nvim_set_hl(0, "@text.title.4", { fg = "#e8ab53" })
+   vim.api.nvim_set_hl(0, "@text.title.5", { fg = "#e8ab53" })
+   vim.api.nvim_set_hl(0, "@text.title.6", { fg = "#e8ab53" })
+   vim.api.nvim_set_hl(0, "@text.title.1.marker", { link = "Comment" })
+   vim.api.nvim_set_hl(0, "@text.title.2.marker", { link = "Comment" })
+   vim.api.nvim_set_hl(0, "@text.title.3.marker", { link = "Comment" })
+   vim.api.nvim_set_hl(0, "@text.title.4.marker", { link = "Comment" })
+   vim.api.nvim_set_hl(0, "@text.title.5.marker", { link = "Comment" })
+   vim.api.nvim_set_hl(0, "@text.title.6.marker", { link = "Comment" })
+   vim.api.nvim_set_hl(0, "@text.title.6.marker", { link = "Comment" })
+
+   vim.api.nvim_set_hl(0, "@text.strong", { fg = "#6a9955", bold = true })
+   vim.api.nvim_set_hl(0, "TableCell", { fg = "#e8ab53" })       -- Doesn't work.
+   vim.api.nvim_set_hl(0, "@text.quote", { link = "Comment" })   -- >> << quatation
 end
 
 return theme
