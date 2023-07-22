@@ -15,7 +15,8 @@ theme.set_highlights = function()
    hl(0, "SpellLocal", { fg = "NONE", bg = "NONE", sp = c.green, underline = true })
    hl(0, "SpellRare", { fg = "NONE", bg = "NONE", sp = c.purple, underline = true })
    hl(0, "NormalNC", { fg = c.fg, bg = c.bg })
-   hl(0, "Pmenu", { fg = c.light_gray, bg = c.menu_bg })
+   -- hl(0, "Pmenu", { fg = c.light_gray, bg = c.menu_bg })
+   hl(0, "Pmenu", { link = "", fg = c.alt_fg, bg = c.menu_bg })
    hl(0, "PmenuSel", { fg = "NONE", bg = c.ui2_blue })
    hl(0, "WildMenu", { fg = c.fg, bg = c.ui2_blue })
    hl(0, "CursorLineNr", { fg = c.light_gray, bg = "NONE" })
@@ -103,9 +104,6 @@ theme.set_highlights = function()
    hl(0, "Identifier", { fg = c.light_blue, bg = "NONE" })
    hl(0, "PreCondit", { fg = c.purple, bg = "NONE" })
    hl(0, "Special", { fg = c.orange, bg = "NONE" })
-
-   -- All Floating Windows
-   hl(0, "Pmenu", { link = "", fg = c.alt_fg, bg = c.dark_gray })
 
    -- Treesitter
    hl(0, "@comment", { fg = c.green, bg = "NONE", italic = true })
