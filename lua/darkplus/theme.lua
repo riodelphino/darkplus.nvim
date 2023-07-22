@@ -303,7 +303,7 @@ theme.set_highlights = function()
    hl(0, "LspCodeLensSeparator", { fg = c.context, bg = "NONE", italic = true })
 
    -- LspInfo
-   hl(0, "LspInfo")
+   hl(0, "LspInfo", {})
    hl(0, "LspInfoTip", { link = "Comment" })
    hl(0, "LspInfoTitle", { link = "Title" })
    hl(0, "LspInfoBorder", { link = "Label" })
