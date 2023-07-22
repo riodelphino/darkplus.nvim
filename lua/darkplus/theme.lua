@@ -38,7 +38,7 @@ theme.set_highlights = function()
    hl(0, "DiffDelete", { fg = c.alt_bg, bg = c.sign_delete })
    hl(0, "QuickFixLine", { fg = "NONE", bg = c.ui2_blue })
    hl(0, "PmenuSbar", { fg = "NONE", bg = c.alt_bg })
-   hl(0, "PmenuThumb", { fg = "NONE", bg = c.gray })
+   hl(0, "PmenuThumb", { fg = "NONE", bg = c.dark_gray })
    hl(0, "MatchWord", { fg = "NONE", bg = c.reference })
    hl(0, "MatchParen", { fg = c.hint, bg = c.reference })
    hl(0, "MatchWordCur", { fg = "NONE", bg = c.reference })
@@ -414,7 +414,7 @@ theme.set_highlights = function()
    -- Bookmarks
    hl(0, "BookmarkSign", { fg = c.sign_change, bg = "NONE" })
    hl(0, "BookmarkAnnotationSign", { fg = c.yellow, bg = "NONE" })
-   hl(0, "BookmarkLine", { fg = c.ui2_blue, bg = "" })   -- * Clear the bg color of bookmarked line
+   hl(0, "BookmarkLine", { bg = "" })   -- * Clear the bg color of bookmarked line
    hl(0, "BookmarkAnnotationLine", { fg = c.ui2_blue, bg = "NONE" })
 
    -- Bqf
