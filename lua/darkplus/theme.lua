@@ -15,7 +15,6 @@ theme.set_highlights = function()
    hl(0, "SpellLocal", { fg = "NONE", bg = "NONE", sp = c.green, underline = true })
    hl(0, "SpellRare", { fg = "NONE", bg = "NONE", sp = c.purple, underline = true })
    hl(0, "NormalNC", { fg = c.fg, bg = c.bg })
-   -- hl(0, "Pmenu", { fg = c.light_gray, bg = c.menu_bg })
    hl(0, "Pmenu", { link = "", fg = c.alt_fg, bg = c.menu_bg })
    hl(0, "PmenuSel", { fg = "NONE", bg = c.ui2_blue })
    hl(0, "WildMenu", { fg = c.fg, bg = c.ui2_blue })
@@ -215,6 +214,28 @@ theme.set_highlights = function()
    hl(0, "markdownFootnote", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownFootnoteDefinition", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownEscape", { fg = c.yellow, bg = "NONE" })
+   -- markdown
+   -- "#e8ab53"
+   -- "#6a9955"
+   hl(0, "@text.title", { link = "" })                   -- title text after #. This should be unset the link, so the below codes work.
+   hl(0, "@punctuation.special", { fg = c.ui_orange })   -- # ## ### #### ...
+   hl(0, "@text.title.1", { fg = c.yellow, underline = true, bold = true })
+   hl(0, "@text.title.2", { fg = c.yellow, bold = true })
+   hl(0, "@text.title.3", { fg = c.yellow })
+   hl(0, "@text.title.4", { fg = c.ui_orange })
+   hl(0, "@text.title.5", { fg = c.ui_orange })
+   hl(0, "@text.title.6", { fg = c.ui_orange })
+   hl(0, "@text.title.1.marker", { link = "Comment" })
+   hl(0, "@text.title.2.marker", { link = "Comment" })
+   hl(0, "@text.title.3.marker", { link = "Comment" })
+   hl(0, "@text.title.4.marker", { link = "Comment" })
+   hl(0, "@text.title.5.marker", { link = "Comment" })
+   hl(0, "@text.title.6.marker", { link = "Comment" })
+   hl(0, "@text.title.6.marker", { link = "Comment" })
+
+   hl(0, "@text.strong", { fg = c.green, bold = true })   -- -- -- strong
+   hl(0, "TableCell", { fg = c.ui_orange })               -- Doesn't work.
+   hl(0, "@text.quote", { link = "Comment" })             -- >> << quatation
 
    -- Whichkey
    hl(0, "WhichKey", { fg = c.purple, bg = "NONE" })
@@ -747,27 +768,6 @@ theme.set_highlights = function()
 
    -- python
    hl(0, "@lang.python", { link = "Identifier" })
-
-   -- markdown
-   hl(0, "@text.title", { link = "" })                 -- title text after #. This should be unset the link, so the below codes work.
-   hl(0, "@punctuation.special", { fg = "#e8ab53" })   -- # ## ### #### ...
-   hl(0, "@text.title.1", { fg = "#e8ab53", underline = true, bold = true })
-   hl(0, "@text.title.2", { fg = "#e8ab53", bold = true })
-   hl(0, "@text.title.3", { fg = "#e8ab53" })
-   hl(0, "@text.title.4", { fg = "#e8ab53" })
-   hl(0, "@text.title.5", { fg = "#e8ab53" })
-   hl(0, "@text.title.6", { fg = "#e8ab53" })
-   hl(0, "@text.title.1.marker", { link = "Comment" })
-   hl(0, "@text.title.2.marker", { link = "Comment" })
-   hl(0, "@text.title.3.marker", { link = "Comment" })
-   hl(0, "@text.title.4.marker", { link = "Comment" })
-   hl(0, "@text.title.5.marker", { link = "Comment" })
-   hl(0, "@text.title.6.marker", { link = "Comment" })
-   hl(0, "@text.title.6.marker", { link = "Comment" })
-
-   hl(0, "@text.strong", { fg = "#6a9955", bold = true })
-   hl(0, "TableCell", { fg = "#e8ab53" })       -- Doesn't work.
-   hl(0, "@text.quote", { link = "Comment" })   -- >> << quatation
 end
 
 return theme
