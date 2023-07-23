@@ -234,6 +234,7 @@ theme.set_highlights = function()
    hl(0, "@text.title.6.marker", { link = "Comment" })
    -- hl(0, "pipe_table_cell", { fg = c.blue})
    hl(0, "@text.tttle", { fg = c.blue })
+   hl(0, "@text.tttle", { fg = "#569CD6" })
 
    hl(0, "@text.strong", { fg = c.green, bold = true })   -- -- -- strong
    hl(0, "TableCell", { fg = c.ui_orange })               -- Doesn't work.
