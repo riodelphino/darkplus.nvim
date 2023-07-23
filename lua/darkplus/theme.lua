@@ -240,7 +240,7 @@ theme.set_highlights = function()
    hl(0, "@text.quote", { link = "Comment" })             -- >> << quatation
    -- Markdown Table
    hl(0, "@table.header", { bg = c.ui_blue })
-   hl(0, "@table.header.cell", { fg = c.light_gray })
+   hl(0, "@table.header.cell", { fg = c.fg })
 
    -- Whichkey
    hl(0, "WhichKey", { fg = c.purple, bg = "NONE" })

@@ -9,15 +9,15 @@
 
 ; Code block
 (fenced_code_block
-  (fenced_code_block_delimiter) @iio @conceal ; Not works.
+  (fenced_code_block_delimiter) @a @conceal ; Not works.
 )
-(fenced_code_block_delimiter) @iio @conceal ; Not works.
+(fenced_code_block_delimiter) @b @conceal ; Not works.
 [
   (fenced_code_block_delimiter)
-] @conceal ; Works !
+] @conceal @c; Works !
 
 (fenced_code_block
-  (info_string) @pio @conceal
+  (info_string) @conceal
 )
 
 
