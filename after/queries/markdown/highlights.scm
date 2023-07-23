@@ -1,7 +1,7 @@
 ;; extends
+
+; Headings
 ((atx_heading) (inline) @text.title)
-
-
 
 ; Block quote
 (block_quote) @comment
