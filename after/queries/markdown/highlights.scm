@@ -1,2 +1,2 @@
 ; extends
-((atx_heading) @text.title)
+((atx_heading) (inline) @text.title)
