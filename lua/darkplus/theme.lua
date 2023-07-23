@@ -220,7 +220,7 @@ theme.set_highlights = function()
    hl(0, "@text.title", { link = "" })                   -- title text after #. This should be unset the link, so the below codes work.
    hl(0, "@punctuation.special", { fg = c.ui_orange })   -- # ## ### #### ...
    hl(0, "@text.title.1", { fg = c.orange, bg = c.dark_gray, underline = true, bold = true })
-   hl(0, "@text.title.2", { fg = c.orange, bg = "#444400", bold = true })
+   hl(0, "@text.title.2", { fg = c.orange, bg = "#222200", bold = true })
    hl(0, "@text.title.3", { fg = c.orange })
    hl(0, "@text.title.4", { fg = c.ui_orange })
    hl(0, "@text.title.5", { fg = c.ui_orange })
