@@ -5,9 +5,9 @@
 (fenced_code_block
   (fenced_code_block_delimiter) @conceal ; Works.
 )
-; [
-;   (fenced_code_block_delimiter)
-; ] @conceal; Not Works !
+[
+  (fenced_code_block_delimiter)
+] @conceal; Not Works !
 
 (fenced_code_block
   (info_string) @conceal
