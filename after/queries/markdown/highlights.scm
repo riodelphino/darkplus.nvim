@@ -1,20 +1,13 @@
 ;; extends
 ((atx_heading) (inline) @text.title)
 
-; Headings
-(atx_heading
-  (atx_h1_marker)
-  (inline) @test @text.underline
-)
-
 ; Code block
 (fenced_code_block
-  (fenced_code_block_delimiter) @a @conceal ; Not works.
+  (fenced_code_block_delimiter) @conceal ; Works.
 )
-(fenced_code_block_delimiter) @b @conceal ; Not works.
-[
-  (fenced_code_block_delimiter)
-] @conceal @c; Works !
+; [
+;   (fenced_code_block_delimiter)
+; ] @conceal; Not Works !
 
 (fenced_code_block
   (info_string) @conceal
