@@ -214,7 +214,7 @@ theme.set_highlights = function()
    hl(0, "markdownFootnote", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownFootnoteDefinition", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownEscape", { fg = c.yellow, bg = "NONE" })
-   -- markdown
+   -- Markdown
    -- "#e8ab53"
    -- "#6a9955"
    hl(0, "@text.title", { link = "" })                   -- title text after #. This should be unset the link, so the below codes work.
@@ -237,8 +237,10 @@ theme.set_highlights = function()
    hl(0, "@text.tttle", { fg = "#569CD6" })
 
    hl(0, "@text.strong", { fg = c.green, bold = true })   -- -- -- strong
-   hl(0, "TableCell", { fg = c.ui_orange })               -- Doesn't work.
    hl(0, "@text.quote", { link = "Comment" })             -- >> << quatation
+   -- Markdown Table
+   hl(0, "@table.header", { bg = c.ui_blue })
+   hl(0, "@table.header.cell", { fg = c.light_gray })
 
    -- Whichkey
    hl(0, "WhichKey", { fg = c.purple, bg = "NONE" })
