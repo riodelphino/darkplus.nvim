@@ -1,2 +1,2 @@
 ; extends
-((atx_heading) @text.title (#set! "priority" 125))
+((atx_heading) @text.title)
