@@ -242,6 +242,14 @@ theme.set_highlights = function()
    hl(0, "@table.header", { bg = c.ui_blue })
    hl(0, "@table.header.cell", { fg = c.fg, bold = true })
 
+   -- Neorg
+   hl(0, "@neorg.headings.1.title", { link = "@text.title.1" })
+   hl(0, "@neorg.headings.2.title", { link = "@text.title.2" })
+   hl(0, "@neorg.headings.3.title", { link = "@text.title.3" })
+   hl(0, "@neorg.headings.4.title", { link = "@text.title.4" })
+   hl(0, "@neorg.headings.5.title", { link = "@text.title.5" })
+   hl(0, "@neorg.headings.6.title", { link = "@text.title.6" })
+
    -- Whichkey
    hl(0, "WhichKey", { fg = c.purple, bg = "NONE" })
    hl(0, "WhichKeySeperator", { fg = c.green, bg = "NONE" })
