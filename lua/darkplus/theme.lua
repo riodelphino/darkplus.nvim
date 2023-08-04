@@ -400,8 +400,10 @@ theme.set_highlights = function()
    hl(0, "NvimTreeExecFile", { fg = "#9FBA89", bg = "NONE" })
 
    -- neo-tree
-   hl(0, "NeoTreeNormal", { link = "Normal" })
-   hl(0, "NeoTreeNormalNC", { link = "NormalNC" })
+   -- hl(0, "NeoTreeNormal", { link = "Normal" })
+   hl(0, "NeoTreeNormal", { fg = c.fg, bg = c.alt_bg })
+   -- hl(0, "NeoTreeNormalNC", { link = "NormalNC" })
+   hl(0, "NeoTreeNormalNC", { fg = c.fg, bg = c.alt_bg })
    hl(0, "NeoTreeSignColumn", { link = "SignColumn" })
    hl(0, "NeoTreeStatusLine", { link = "StatusLine" })
    hl(0, "NeoTreeStatusLineNC", { link = "StatusLineNC" })
