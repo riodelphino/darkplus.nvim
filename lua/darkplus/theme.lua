@@ -6,7 +6,7 @@ local theme = {}
 theme.set_highlights = function()
    -- Editor
    hl(0, "Normal", { fg = c.fg, bg = c.bg })
-   hl(0, "SignColumn", { fg = "NONE", bg = c.bg })
+   hl(0, "SignColumn", { fg = "NONE", bg = "NONE" })
    hl(0, "MsgArea", { fg = c.fg, bg = c.bg })
    hl(0, "ModeMsg", { fg = c.fg, bg = c.alt_bg })
    hl(0, "MsgSeparator", { fg = c.fg, bg = c.bg })
@@ -217,8 +217,8 @@ theme.set_highlights = function()
    -- Markdown
    -- "#e8ab53"
    -- "#6a9955"
-   hl(0, "@text.title", { link = "" })                   -- title text after #. This should be unset the link, so the below codes work.
-   hl(0, "@punctuation.special", { fg = c.ui_orange })   -- # ## ### #### ...
+   hl(0, "@text.title", { link = "" })                 -- title text after #. This should be unset the link, so the below codes work.
+   hl(0, "@punctuation.special", { fg = c.ui_orange }) -- # ## ### #### ...
    hl(0, "@text.title.1", { fg = c.ui_orange, underline = true, bold = true })
    hl(0, "@text.title.2", { fg = c.ui_orange, bold = true })
    hl(0, "@text.title.3", { fg = c.ui_orange })
@@ -236,11 +236,16 @@ theme.set_highlights = function()
    hl(0, "@text.tttle", { fg = c.blue })
    hl(0, "@text.tttle", { fg = "#569CD6" })
 
-   hl(0, "@text.strong", { fg = c.green, bold = true })   -- -- -- strong
-   hl(0, "@text.quote", { link = "Comment" })             -- >> << quatation
+   hl(0, "@text.strong", { fg = c.green, bold = true }) -- -- -- strong
+   hl(0, "@text.quote", { link = "Comment" })           -- >> << quatation
    -- Markdown Table
-   hl(0, "@table.header", { bg = c.ui_blue })
+   hl(0, "@table", { fg = c.gray })
+   hl(0, "@table.header", { fg = c.gray, bg = c.ui_blue })
    hl(0, "@table.header.cell", { fg = c.fg, bold = true })
+   -- hl(0, "@table.row", { fg = c.ui_blue })
+   -- hl(0, "@table.delimiter.row", { fg = c.dark_gray })
+   hl(0, "@table.delimiter.cell", { fg = c.dark_gray })
+   hl(0, "@table.cell", { fg = c.fg })
 
    -- Neorg
    hl(0, "@neorg.headings.1.title", { link = "@text.title.1" })
@@ -347,16 +352,16 @@ theme.set_highlights = function()
    hl(0, "LspInfoBorder", { link = "Label" })
    hl(0, "LspInfoList", { link = "Function" })
    hl(0, "LspInfoFiletype", { link = "Type" })
-   hl(0, "LspInfoFiletypeList", {})          -- cleared
-   hl(0, "LspInfoListList", {})              -- cleared
-   hl(0, "LspInfoBorder", { fg = c.gray })   -- "#777777"
+   hl(0, "LspInfoFiletypeList", {})        -- cleared
+   hl(0, "LspInfoListList", {})            -- cleared
+   hl(0, "LspInfoBorder", { fg = c.gray }) -- "#777777"
 
    -- NullLsInfo
    -- NullLsInfoHeader ... Window header
    -- NullLsInfoTitle ... Titles
    -- NullLsInfoBorder ...  Window border
    -- NullLsInfoSources ... Sources names
-   hl(0, "NullLsInfoBorder", { fg = c.gray })   -- "#777777"
+   hl(0, "NullLsInfoBorder", { fg = c.gray }) -- "#777777"
 
    -- Quickscope
    hl(0, "QuickScopePrimary", { fg = "#ff007c", bg = "NONE", underline = true })
@@ -425,7 +430,7 @@ theme.set_highlights = function()
    hl(0, "NeoTreeDirectoryName", { link = "Directory" })
    hl(0, "NeoTreeDirectoryIcon", { link = "Directory" })
    hl(0, "NeoTreeFileIcon", { link = "NeoTreeDirectoryIcon" })
-   hl(0, "NeoTreeFileName", {})   -- cleared
+   hl(0, "NeoTreeFileName", {}) -- cleared
    hl(0, "NeoTreeFileNameOpened", { bold = true })
    hl(0, "NeoTreeSymbolicLinkTarget", { link = "NeoTreeFileName" })
    hl(0, "NeoTreeFilterTerm", { link = "SpecialChar" })
@@ -502,7 +507,7 @@ theme.set_highlights = function()
    -- Bookmarks
    hl(0, "BookmarkSign", { fg = c.sign_change, bg = "NONE" })
    hl(0, "BookmarkAnnotationSign", { fg = c.yellow, bg = "NONE" })
-   hl(0, "BookmarkLine", { bg = "" })   -- * Clear the bg color of bookmarked line
+   hl(0, "BookmarkLine", { bg = "" }) -- * Clear the bg color of bookmarked line
    hl(0, "BookmarkAnnotationLine", { fg = c.ui2_blue, bg = "NONE" })
 
    -- Bqf
