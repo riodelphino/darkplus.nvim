@@ -506,9 +506,9 @@ theme.set_highlights = function()
 
    -- Bookmarks
    hl(0, "BookmarkSign", { fg = c.sign_change, bg = "NONE" })
-   hl(0, "BookmarkAnnotationSign", { fg = c.yellow, bg = "NONE" })
-   hl(0, "BookmarkLine", { bg = "" }) -- * Clear the bg color of bookmarked line
-   hl(0, "BookmarkAnnotationLine", { fg = c.ui2_blue, bg = "NONE" })
+   hl(0, "BookmarkAnnotationSign", { fg = c.sign_change_alt, bg = "NONE" })
+   hl(0, "BookmarkLine", { fg = "NONE", bg = c.ui2_blue })
+   hl(0, "BookmarkAnnotationLine", { fg = "NONE", bg = c.ui2_blue })
 
    -- Bqf
    hl(0, "BqfPreviewBorder", { fg = c.fg, bg = "NONE" })
