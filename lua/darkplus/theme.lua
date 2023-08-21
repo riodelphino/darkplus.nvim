@@ -276,6 +276,10 @@ theme.set_highlights = function()
    hl(0, "GitSignsChange", { fg = c.sign_change, bg = "NONE" })
    hl(0, "GitSignsDelete", { fg = c.sign_delete, bg = "NONE" })
 
+   -- Lazygit
+   hl(0, "LazyGitFloat", { fg = c.fg, bg = c.alt_bg })
+   hl(0, "LazyGitBorder", { fg = c.fg, bg = c.alt_bg })
+
    -- LSP
    hl(0, "DiagnosticHint", { fg = c.hint, bg = "NONE" })
    hl(0, "DiagnosticInfo", { fg = c.info, bg = "NONE" })
