@@ -183,6 +183,17 @@ theme.set_highlights = function()
    hl(0, "@lsp.typemod.keyword.documentation", { link = "Keyword" })
 
    -- markdown
+   -- ///  from Lunar original ///
+   -- hl(0, "@text.reference.markdown_inline", { fg = c.orange, bg = "NONE" })
+   -- hl(0, "@text.uri.markdown_inline", { fg = c.fg, bg = "NONE", underline = true })
+   -- hl(0, "@text.title.markdown", { fg = c.vivid_blue, bg = "NONE", bold = true })
+   -- hl(0, "@punctuation.special.markdown", { fg = c.light_gray, bg = "NONE" })
+   -- hl(0, "@text.reference.markdown", { fg = c.vivid_blue, bg = "NONE" })
+   -- hl(0, "@lsp.type.class.markdown", { fg = c.vivid_blue, bg = "NONE" })
+   -- hl(0, "@text.literal.markdown_inline", { fg = c.orange, bg = "NONE" })
+   -- hl(0, "@text.literal.markdown", { fg = c.orange, bg = "NONE" })
+
+   -- /// riodelphino ///
    hl(0, "markdownBlockquote", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownCode", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownCodeBlock", { fg = c.orange, bg = "NONE" })
@@ -193,7 +204,7 @@ theme.set_highlights = function()
    hl(0, "markdownH4", { link = "Title" })
    hl(0, "markdownH5", { link = "Title" })
    hl(0, "markdownH6", { link = "Title" })
-   hl(0, "markdownHeadingDelimiter", { fg = c.blue, bg = "NONE" })
+   hl(0, "markdownHeadingDelimiter", { fg = c.green, bg = "NONE" })
    hl(0, "markdownHeadingRule", { fg = c.fg, bg = "NONE", bold = true })
    hl(0, "markdownId", { link = "Identifier" })
    hl(0, "markdownIdDeclaration", { fg = c.blue, bg = "NONE" })
@@ -210,7 +221,29 @@ theme.set_highlights = function()
    else
       hl(0, "markdownUrl", { fg = c.cyan, bg = "NONE", underdot = true })
    end
-   hl(0, "markdownLinkText", { fg = c.blue, bg = "NONE" })
+   -- ShowHighlights で表示されたやつ。デフォルトのもの？でも設定しても効かない
+   --
+   -- markdownValid  xxx cleared
+   -- markdownLineStart xxx cleared
+   -- markdownLineBreak xxx cleared
+   -- markdownError  xxx links to Error
+   -- markdownAutomaticLink xxx links to markdownUrl
+   -- markdownH1Delimiter xxx links to markdownHeadingDelimiter
+   -- markdownH2Delimiter xxx links to markdownHeadingDelimiter
+   -- markdownH3Delimiter xxx links to markdownHeadingDelimiter
+   -- markdownH4Delimiter xxx links to markdownHeadingDelimiter
+   -- markdownH5Delimiter xxx links to markdownHeadingDelimiter
+   -- markdownH6Delimiter xxx links to markdownHeadingDelimiter
+   -- markdownUrlTitle xxx links to String
+   -- markdownUrlDelimiter xxx links to htmlTag
+   -- markdownUrlTitleDelimiter xxx links to Delimiter
+   -- markdownLinkTextDelimiter xxx cleared
+   -- markdownLink   xxx cleared
+   -- markdownItalicDelimiter xxx links to markdownItalic
+   -- markdownBoldDelimiter xxx links to markdownBold
+   -- markdownBoldItalicDelimiter xxx links to markdownBoldItalic
+   -- markdownStrikeDelimiter xxx links to markdownStrike
+   -- markdownStrike xxx links to htmlStrike
    hl(0, "markdownFootnote", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownFootnoteDefinition", { fg = c.orange, bg = "NONE" })
    hl(0, "markdownEscape", { fg = c.yellow, bg = "NONE" })
@@ -225,19 +258,32 @@ theme.set_highlights = function()
    hl(0, "@text.title.4", { fg = c.ui_orange })
    hl(0, "@text.title.5", { fg = c.yellow_orange })
    hl(0, "@text.title.6", { fg = c.yellow_orange })
-   hl(0, "@text.title.1.marker", { link = "Comment" })
-   hl(0, "@text.title.2.marker", { link = "Comment" })
-   hl(0, "@text.title.3.marker", { link = "Comment" })
-   hl(0, "@text.title.4.marker", { link = "Comment" })
-   hl(0, "@text.title.5.marker", { link = "Comment" })
-   hl(0, "@text.title.6.marker", { link = "Comment" })
-   hl(0, "@text.title.6.marker", { link = "Comment" })
+   hl(0, "@text.title.1.marker", { fg = c.green })
+   hl(0, "@text.title.2.marker", { fg = c.green })
+   hl(0, "@text.title.3.marker", { fg = c.green })
+   hl(0, "@text.title.4.marker", { fg = c.green })
+   hl(0, "@text.title.5.marker", { fg = c.green })
+   hl(0, "@text.title.6.marker", { fg = c.green })
+   hl(0, "@text.title.6.marker", { fg = c.green })
    -- hl(0, "pipe_table_cell", { fg = c.blue})
    hl(0, "@text.tttle", { fg = c.blue })
    hl(0, "@text.tttle", { fg = "#569CD6" })
 
-   hl(0, "@text.strong", { fg = c.green, bold = true }) -- -- -- strong
-   hl(0, "@text.quote", { link = "Comment" })           -- >> << quatation
+   hl(0, "@text.strong", { fg = c.red, bold = true })               -- -- -- strong
+   hl(0, "@text.quote", { link = "Comment" })                       -- >> << quatation
+   hl(0, "@markup.link", { fg = c.gray })                           -- [ ]( )
+   hl(0, "@markup.link.label", { fg = c.vivid_blue })               -- [label]
+   hl(0, "@markup.link.url", { fg = c.fg })                         -- [ ](url)
+   hl(0, "@list.marker", { fg = c.vivid_blue })                     -- - * list
+   hl(0, "@list.marker.dot", { fg = c.vivid_blue })                 -- 1. 2. 3. numbered list
+   hl(0, "@markup.list.checked", { fg = c.magenta, bold = true })   -- [x] task list checked
+   hl(0, "@markup.list.checked.text", { fg = c.gray })
+   hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true }) -- [ ] task list unchecked
+   hl(0, "@markup.list.unchecked.text", { fg = c.fg })
+   -- hl(0, "@tasklist.pending", { fg = c.red })           -- [-] task list pending (TS doesn't parse this, so cannot markup. orz)
+   -- hl(0, "@tasklist.pending.text", { fg = c.vivid_blue })
+   hl(0, "@markup.raw", { fg = c.orange }) -- `the raw code`
+
    -- Markdown Table
    hl(0, "@table", { fg = c.gray })
    hl(0, "@table.header", { fg = c.gray, bg = c.ui_blue })
