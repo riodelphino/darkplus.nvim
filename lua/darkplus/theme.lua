@@ -269,16 +269,16 @@ theme.set_highlights = function()
    hl(0, "@text.tttle", { fg = c.blue })
    hl(0, "@text.tttle", { fg = "#569CD6" })
 
-   hl(0, "@text.strong", { fg = c.red, bold = true })               -- -- -- strong
-   hl(0, "@text.quote", { link = "Comment" })                       -- >> << quatation
-   hl(0, "@markup.link", { fg = c.gray })                           -- [ ]( )
-   hl(0, "@markup.link.label", { fg = c.vivid_blue })               -- [label]
-   hl(0, "@markup.link.url", { fg = c.fg })                         -- [ ](url)
-   hl(0, "@list.marker", { fg = c.vivid_blue })                     -- - * list
-   hl(0, "@list.marker.dot", { fg = c.vivid_blue })                 -- 1. 2. 3. numbered list
-   hl(0, "@markup.list.checked", { fg = c.magenta, bold = true })   -- [x] task list checked
+   hl(0, "@text.strong", { fg = c.white, bg = c.ui2_purple, bold = false }) -- -- -- strong
+   hl(0, "@text.quote", { link = "Comment" })                               -- >> << quatation
+   hl(0, "@markup.link", { fg = c.gray })                                   -- [ ]( )
+   hl(0, "@markup.link.label", { fg = c.vivid_blue })                       -- [label]
+   hl(0, "@markup.link.url", { fg = c.fg })                                 -- [ ](url)
+   hl(0, "@list.marker", { fg = c.vivid_blue })                             -- - * list
+   hl(0, "@list.marker.dot", { fg = c.vivid_blue })                         -- 1. 2. 3. numbered list
+   hl(0, "@markup.list.checked", { fg = c.magenta, bold = true })           -- [x] task list checked
    hl(0, "@markup.list.checked.text", { fg = c.gray })
-   hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true }) -- [ ] task list unchecked
+   hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true })         -- [ ] task list unchecked
    hl(0, "@markup.list.unchecked.text", { fg = c.fg })
    -- hl(0, "@tasklist.pending", { fg = c.red })           -- [-] task list pending (TS doesn't parse this, so cannot markup. orz)
    -- hl(0, "@tasklist.pending.text", { fg = c.vivid_blue })

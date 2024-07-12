@@ -4,6 +4,7 @@ local colors = {
    alt_fg = "#a4a4a4",
    alt_bg = "#252525",
    line = "#3e3e3e",
+   white = "#FFFFFF",
    dark_gray = "#404040",
    gray = "#808080",
    context = "#606060",
@@ -47,6 +48,7 @@ local colors = {
    ui_orange = "#E8AB53",
    ui2_orange = "#613214",
    ui_purple = "#B180D7",
+   ui2_purple = "#664062",
 }
 
 return colors
