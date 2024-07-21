@@ -250,8 +250,8 @@ theme.set_highlights = function()
    -- Markdown
    -- "#e8ab53"
    -- "#6a9955"
-   hl(0, "@text.title", { link = "" })                 -- title text after #. This should be unset the link, so the below codes work.
-   hl(0, "@punctuation.special", { fg = c.ui_orange }) -- # ## ### #### ...
+   hl(0, "@text.title", { link = "" }) -- title text after #. This should be unset the link, so the below codes work.
+   -- hl(0, "@punctuation.special", { fg = c.ui_orange }) -- # ## ### #### ... NO, this is not only for markdown.
    hl(0, "@text.title.1", { fg = c.ui_orange, underline = true, bold = true })
    hl(0, "@text.title.2", { fg = c.ui_orange, bold = true })
    hl(0, "@text.title.3", { fg = c.ui_orange })
@@ -269,16 +269,17 @@ theme.set_highlights = function()
    hl(0, "@text.tttle", { fg = c.blue })
    hl(0, "@text.tttle", { fg = "#569CD6" })
 
-   hl(0, "@text.strong", { fg = c.white, bg = c.ui2_purple, bold = false }) -- -- -- strong
-   hl(0, "@text.quote", { link = "Comment" })                               -- >> << quatation
-   hl(0, "@markup.link", { fg = c.gray })                                   -- [ ]( )
-   hl(0, "@markup.link.label", { fg = c.vivid_blue })                       -- [label]
-   hl(0, "@markup.link.url", { fg = c.fg })                                 -- [ ](url)
-   hl(0, "@list.marker", { fg = c.vivid_blue })                             -- - * list
-   hl(0, "@list.marker.dot", { fg = c.vivid_blue })                         -- 1. 2. 3. numbered list
-   hl(0, "@markup.list.checked", { fg = c.magenta, bold = true })           -- [x] task list checked
+   hl(0, "@text.strong", { fg = c.fg, bg = c.ui_blue, bold = false })   -- strong
+   hl(0, "@markup.italic", { fg = c.blue, italic = true })              -- italic
+   hl(0, "@text.quote", { link = "Comment" })                           -- >> << quatation
+   hl(0, "@markup.link", { fg = c.gray })                               -- [ ]( )
+   hl(0, "@markup.link.label", { fg = c.vivid_blue, underline = true }) -- [label]
+   hl(0, "@markup.link.url", { fg = c.fg })                             -- [ ](url)
+   hl(0, "@list.marker", { fg = c.vivid_blue })                         -- - * list
+   hl(0, "@list.marker.dot", { fg = c.vivid_blue })                     -- 1. 2. 3. numbered list
+   hl(0, "@markup.list.checked", { fg = c.magenta, bold = true })       -- [x] task list checked
    hl(0, "@markup.list.checked.text", { fg = c.gray })
-   hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true })         -- [ ] task list unchecked
+   hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true })     -- [ ] task list unchecked
    hl(0, "@markup.list.unchecked.text", { fg = c.fg })
    -- hl(0, "@tasklist.pending", { fg = c.red })           -- [-] task list pending (TS doesn't parse this, so cannot markup. orz)
    -- hl(0, "@tasklist.pending.text", { fg = c.vivid_blue })
@@ -287,7 +288,7 @@ theme.set_highlights = function()
    -- Markdown Table
    hl(0, "@table", { fg = c.gray })
    hl(0, "@table.header", { fg = c.gray, bg = c.ui_blue })
-   hl(0, "@table.header.cell", { fg = c.fg, bold = true })
+   hl(0, "@table.header.cell", { fg = c.fg, bold = false })
    -- hl(0, "@table.row", { fg = c.ui_blue })
    -- hl(0, "@table.delimiter.row", { fg = c.dark_gray })
    hl(0, "@table.delimiter.cell", { fg = c.dark_gray })
