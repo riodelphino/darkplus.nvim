@@ -105,7 +105,7 @@ theme.set_highlights = function()
    hl(0, "Special", { fg = c.orange, bg = "NONE" })
 
    -- Treesitter
-   hl(0, "@comment", { fg = c.green, bg = "NONE", italic = true })
+   hl(0, "@comment", { fg = c.green, bg = "NONE", italic = false })
    hl(0, "@none", { fg = "NONE", bg = "NONE" })
    hl(0, "@preproc", { link = "PreProc" })
    hl(0, "@define", { link = "Define" })
@@ -527,6 +527,73 @@ theme.set_highlights = function()
    hl(0, "BufferInactiveMod", { fg = c.info, bg = c.alt_bg })
    hl(0, "BufferInactiveSign", { fg = c.gray, bg = c.alt_bg })
    hl(0, "BufferInactiveTarget", { fg = c.red, bg = c.alt_bg, bold = true })
+
+   -- BufferLine
+   -- !!! Caution !!!
+   -- BufferLine has original "configs.highlights" options which has to set colors. Not here.
+   -- Otherwise web-dev-icon colors will be lost & background is black only.
+   --
+   -- hl(0, "BufferCurrent", { fg = c.fg, bg = c.bg })
+   -- hl(0, "BufferLineFill", { fg = c.fg, bg = c.alt_bg })
+   -- hl(0, "BufferLineBackground", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineBufferVisible", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineBufferSelected", { fg = c.fg, bg = c.ui_blue, italic = false })
+   -- hl(0, "BufferLineBuffer", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineCloseButton", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineCloseButtonSelected", { fg = c.fg, bg = c.ui_blue })
+   -- hl(0, "BufferLineCloseButtonVislble", { fg = c.fg, bg = c.tab })
+   -- -- "BufferLineTab"
+   -- -- "BufferLineTabSelected"
+   -- -- "BufferLineTabClose"
+   -- -- "BufferLineNumbers"
+   -- -- "BufferLineNumbersVisible"
+   -- -- "BufferLineNumbersSelected"
+   -- -- "BufferLineDiagnostic"
+   -- -- "BufferLineDiagnosticVisible"
+   -- -- "BufferLineDiagnosticSelected"
+   -- -- "BufferLineHint"
+   -- -- "BufferLineHintVisible"
+   -- -- "BufferLineHintSelected"
+   -- -- "BufferLineHintDiagnostic"
+   -- -- "BufferLineHintDiagnosticVisible"
+   -- -- "BufferLineHintDiagnosticSelected"
+   -- -- "BufferLineInfo"
+   -- -- "BufferLineInfoVisible"
+   -- -- "BufferLineInfoSelected"
+   -- -- "BufferLineInfoDiagnostic"
+   -- -- "BufferLineInfoDiagnostic_visible"
+   -- -- "BufferLineInfoDiagnostic_selected"
+   -- -- "BufferLineWarning"
+   -- -- "BufferLineWarningVisible"
+   -- -- "BufferLineWarningSelected"
+   -- -- "BufferLineWarningDiagnostic"
+   -- -- "BufferLineWarningDiagnostic_visible"
+   -- -- "BufferLineWarningDiagnostic_selected"
+   -- -- "BufferLineError"
+   -- -- "BufferLineErrorVisible"
+   -- -- "BufferLineErrorSelected"
+   -- -- "BufferLineErrorDiagnostic"
+   -- -- "BufferLineErrorDiagnostic_visible"
+   -- -- "BufferLineErrorDiagnostic_selected"
+   -- hl(0, "BufferLineModified", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineModifiedVisible", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineModifiedSelected", { fg = c.fg, bg = c.ui_blue })
+   -- hl(0, "BufferLineDuplicateSelected", { fg = c.green, bg = c.ui_blue })
+   -- hl(0, "BufferLineDuplicateVisible", { fg = c.gray, bg = c.tab })
+   -- hl(0, "BufferLineDuplicate", { fg = c.green, bg = c.tab })
+   -- hl(0, "BufferLineSeparator", { fg = c.alt_bg, bg = c.alt_bg })
+   -- hl(0, "BufferLineSeparatorSelected", { fg = c.alt_bg, bg = c.alt_bg })
+   -- hl(0, "BufferLineSeparatorVisible", { fg = c.alt_bg, bg = c.tab })
+   -- hl(0, "BufferLineIndicatorSelected", { fg = c.fg, bg = c.ui_blue })
+   -- hl(0, "BufferLineIndicatorVisible", { fg = c.fg, bg = c.tab })
+   -- -- "BufferLinePickSelected"
+   -- -- "BufferLinePickVisible"
+   -- -- "BufferLinePick"
+   -- -- "BufferLineOffsetSeparator"
+   -- hl(0, "BufferLineDevIcon", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineDevIconDefault", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineDevIconVisible", { fg = c.fg, bg = c.tab })
+   -- hl(0, "BufferLineDevIconSelected", { fg = c.fg, bg = c.ui_blue })
 
    -- StatusLine
    hl(0, "StatusLine", { fg = c.context, bg = c.alt_bg })

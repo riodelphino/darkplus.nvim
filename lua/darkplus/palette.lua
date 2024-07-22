@@ -4,6 +4,7 @@ local colors = {
    alt_fg = "#a4a4a4",
    alt_bg = "#252525",
    line = "#3e3e3e",
+   tab = "#373737",
    white = "#FFFFFF",
    dark_gray = "#404040",
    gray = "#808080",
