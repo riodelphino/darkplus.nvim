@@ -62,6 +62,7 @@ theme.set_highlights = function()
    hl(0, "TabLine", { fg = c.light_gray, bg = c.line })
    hl(0, "TabLineSel", { fg = c.fg, bg = c.line })
    hl(0, "TabLineFill", { fg = c.line, bg = c.line })
+   hl(0, "WinSeparator", { fg = c.gray6, bg = c.bg })
 
    -- Code
    hl(0, "Comment", { fg = c.green, bg = "NONE" })
