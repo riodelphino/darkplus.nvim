@@ -831,6 +831,20 @@ theme.set_highlights = function()
    -- hl(0, "NoiceSplitBorder", { fg = c.hint, bg = c.hint })
    hl(0, "NoiceVirtualText", { fg = c.hint, bg = c.hint_bg })
 
+   -- Scrollbar
+   hl(0, "ScrollbarHandle", { bg = c.line })
+   -- hl(0, "ScrollbarCursor", { bg = c.line })
+   -- hl(0, "ScrollbarSearch", { bg = c.line })
+   -- hl(0, "ScrollbarError", { bg = c.line })
+   -- hl(0, "ScrollbarWarn", { bg = c.line })
+   -- hl(0, "ScrollbarInfo", { bg = c.line })
+   -- hl(0, "ScrollbarHint", { bg = c.line })
+   -- hl(0, "ScrollbarMisc", { bg = c.line })
+   -- hl(0, "ScrollbarError", { bg = c.line })
+   -- hl(0, "ScrollbarGitAdd", { bg = c.line })
+   -- hl(0, "ScrollbarGitChange", { bg = c.line })
+   -- hl(0, "ScrollbarGitDelete", { bg = c.line })
+
    -- Noice
 
    -- TreesitterContext
