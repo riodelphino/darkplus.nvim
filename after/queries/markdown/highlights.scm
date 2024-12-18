@@ -44,6 +44,11 @@
   (task_list_marker_unchecked) ; @markup.list.unchecked
   (paragraph (inline) @markup.list.unchecked.text)
 )
+(list_item
+  (task_list_marker_pending) ; @markup.list.pending
+  (paragraph (inline) @markup.list.pending.text)
+)
+
 ; pending -- doesn't work, because [-] is not parsed by TS.
 ; (list_item
 ;   (
