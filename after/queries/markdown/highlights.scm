@@ -37,15 +37,15 @@
 
 ; Task list
 (list_item
-  (task_list_marker_checked) ; @markup.list.checked
+  (task_list_marker_checked) ; @markup.list.checked ; listed twice, so omit
   (paragraph (inline) @markup.list.checked.text)
 )
 (list_item
-  (task_list_marker_unchecked) ; @markup.list.unchecked
+  (task_list_marker_unchecked) ; @markup.list.unchecked ; listed twice, so omit
   (paragraph (inline) @markup.list.unchecked.text)
 )
 (list_item
-  (task_list_marker_pending) ; @markup.list.pending
+  (task_list_marker_pending) @markup.list.pending
   (paragraph (inline) @markup.list.pending.text)
 )
 
