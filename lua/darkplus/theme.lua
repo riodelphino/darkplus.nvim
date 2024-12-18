@@ -284,8 +284,8 @@ theme.set_highlights = function()
    hl(0, "@markup.list.checked.text", { fg = c.gray })
    hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true })      -- [ ] task list unchecked
    hl(0, "@markup.list.unchecked.text", { fg = c.fg })
-   -- hl(0, "@tasklist.pending", { fg = c.red })           -- [-] task list pending (TS doesn't parse this, so cannot markup. orz)
-   -- hl(0, "@tasklist.pending.text", { fg = c.vivid_blue })
+   hl(0, "@markup.list.pending", { fg = c.magenta, bold = true })           -- [-] task list pending (TS doesn't parse this, so cannot markup. NEED custom parser.)
+   hl(0, "@markup.list.pending.text", { fg = c.fg })
    hl(0, "@markup.raw", { fg = c.orange }) -- `the raw code`
 
    -- Markdown Table
