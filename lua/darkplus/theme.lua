@@ -280,7 +280,7 @@ theme.set_highlights = function()
    hl(0, "@markup.link.url", { fg = c.fg })                              -- [ ](url)
    hl(0, "@list.marker", { fg = c.vivid_blue })                          -- - * list
    hl(0, "@list.marker.dot", { fg = c.vivid_blue })                      -- 1. 2. 3. numbered list
-   hl(0, "@markup.list.checked", { fg = c.magenta, bold = true })        -- [x] task list checked
+   hl(0, "@markup.list.checked", { fg = c.gray, bold = true })        -- [x] task list checked
    hl(0, "@markup.list.checked.text", { fg = c.gray })
    hl(0, "@markup.list.unchecked", { fg = c.magenta, bold = true })      -- [ ] task list unchecked
    hl(0, "@markup.list.unchecked.text", { fg = c.fg })
