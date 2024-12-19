@@ -74,8 +74,8 @@
 (pipe_table_header
   (pipe_table_cell) @table.header.cell
 )
-(pipe_table_delimiter_row)  @table.delimiter.row
-(pipe_table_delimiter_cell) @table.delimiter.cell
+(pipe_table_delimiter_row)  @table.delimiter.row ; Exists ?
+(pipe_table_delimiter_cell) @table.delimiter.cell ; Exists ? 
 (pipe_table_row) @table.row
 (pipe_table_cell) @table.cell
  
