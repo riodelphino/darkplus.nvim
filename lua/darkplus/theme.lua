@@ -267,8 +267,8 @@ theme.set_highlights = function()
    hl(0, "@text.title.6.marker", { fg = c.green })
    hl(0, "@text.title.6.marker", { fg = c.green })
    -- hl(0, "pipe_table_cell", { fg = c.blue})
-   hl(0, "@text.tttle", { fg = c.blue })
-   hl(0, "@text.tttle", { fg = "#569CD6" })
+   hl(0, "@text.title", { fg = c.blue })
+   hl(0, "@text.title", { fg = "#569CD6" })
 
    -- hl(0, "@text.strong", { fg = c.fg, bg = c.ui_blue, bold = false })   -- strong
    -- hl(0, "@markup.italic", { fg = c.blue, italic = true })              -- italic
