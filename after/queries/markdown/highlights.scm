@@ -67,7 +67,7 @@
 ; )
 
 ; Block quote
-(block_quote) @comment
+(block_quote) @markup.quote
 
 ; Table
 (pipe_table_header) @table.header
