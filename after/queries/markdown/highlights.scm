@@ -68,7 +68,7 @@
 
 ; Block quote
 ; (block_quote) @markup.quote ; listed twice so omit
-(block_quote (block_quote_marker) @markup.quote.marker)
+; (block_quote (block_quote_marker) @markup.quote.marker) ; Only 1st row's > is markuped ...
 
 ; Table
 (pipe_table_header) @table.header
