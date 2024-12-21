@@ -67,7 +67,8 @@
 ; )
 
 ; Block quote
-(block_quote) @markup.quote
+; (block_quote) @markup.quote ; listed twice so omit
+(block_quote (block_quote_marker) @markup.quote.marker)
 
 ; Table
 (pipe_table_header) @table.header
