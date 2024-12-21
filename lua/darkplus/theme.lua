@@ -106,7 +106,7 @@ theme.set_highlights = function()
    hl(0, "Special", { fg = c.orange, bg = "NONE" })
 
    -- Treesitter
-   hl(0, "@comment", { fg = c.green, bg = "NONE", italic = false })
+   hl(0, "@comment", { fg = c.green, bg = "NONE", italic = false, default = true })
    hl(0, "@none", { fg = "NONE", bg = "NONE" })
    hl(0, "@preproc", { link = "PreProc" })
    hl(0, "@define", { link = "Define" })
@@ -276,7 +276,7 @@ theme.set_highlights = function()
    hl(0, "@text.strong", { fg = c.fg, bg = c.ui2_purple, bold = false }) -- strong
    hl(0, "@markup.italic", { fg = c.ui_purple, italic = true })          -- italic
    hl(0, "@text.quote", { link = "Comment" })                            -- >> << quatation
-   hl(0, "@markup.quote", { fg = c.gray })                               -- > quatation
+   hl(0, "@markup.quote", { fg = c.gray, default = false })              -- > quatation
    hl(0, "@markup.link", { fg = c.gray })                                -- [ ]( )
    hl(0, "@markup.link.label", { fg = c.vivid_blue, underline = true })  -- [label]
    hl(0, "@markup.link.url", { fg = c.fg })                              -- [ ](url)
