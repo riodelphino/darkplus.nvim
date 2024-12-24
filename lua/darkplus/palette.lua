@@ -62,6 +62,7 @@ local colors = {
    ui4_blue = "#75BEFF",
    ui5_blue = "#083C5A",
    ui6_blue = "#3F78A9",
+   ui7_blue = "#223344",
    ui_orange = "#E8AB53",
    ui2_orange = "#613214",
    ui_purple = "#B180D7",
