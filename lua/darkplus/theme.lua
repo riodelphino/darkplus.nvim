@@ -300,18 +300,18 @@ theme.set_highlights = function()
    hl(0, "@table.cell", { fg = c.fg })
 
    -- render-markdown.nvim
-   hl(0, "RenderMarkdownH1Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH1Bg", { fg = "NONE", bg = c.alt_bg }) -- H*Bg colors are overwritten by opts in render-markdown
    hl(0, "RenderMarkdownH2Bg", { fg = "NONE", bg = c.alt_bg })
    hl(0, "RenderMarkdownH3Bg", { fg = "NONE", bg = c.alt_bg })
    hl(0, "RenderMarkdownH4Bg", { fg = "NONE", bg = c.alt_bg })
    hl(0, "RenderMarkdownH5Bg", { fg = "NONE", bg = c.alt_bg })
    hl(0, "RenderMarkdownH6Bg", { fg = "NONE", bg = c.alt_bg })
-   hl(0, "RenderMarkdownH1g", { link = "@text.title.1" })
-   hl(0, "RenderMarkdownH2g", { link = "@text.title.2" })
-   hl(0, "RenderMarkdownH3g", { link = "@text.title.3" })
-   hl(0, "RenderMarkdownH4g", { link = "@text.title.4" })
-   hl(0, "RenderMarkdownH5g", { link = "@text.title.5" })
-   hl(0, "RenderMarkdownH6g", { link = "@text.title.6" })
+   hl(0, "RenderMarkdownH1", { link = "@text.title.1" }) -- H* colors are overwritten by opts in render-markdown
+   hl(0, "RenderMarkdownH2", { link = "@text.title.2" })
+   hl(0, "RenderMarkdownH3", { link = "@text.title.3" })
+   hl(0, "RenderMarkdownH4", { link = "@text.title.4" })
+   hl(0, "RenderMarkdownH5", { link = "@text.title.5" })
+   hl(0, "RenderMarkdownH6", { link = "@text.title.6" })
 
    -- Neorg
    hl(0, "@neorg.headings.1.title", { link = "@text.title.1" })
