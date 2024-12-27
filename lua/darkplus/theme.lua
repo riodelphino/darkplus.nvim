@@ -290,7 +290,7 @@ theme.set_highlights = function()
    hl(0, "@markup.list.pending.text", { fg = c.fg })
    hl(0, "@markup.raw", { fg = c.orange }) -- `the raw code`
 
-   -- Markdown Table
+   -- Markdown Table (Replaced to render-markdown.nvim)
    hl(0, "@table", { fg = c.gray })
    hl(0, "@table.header", { fg = c.gray, bg = c.ui_blue })
    hl(0, "@table.header.cell", { fg = c.fg, bold = false })
@@ -298,6 +298,20 @@ theme.set_highlights = function()
    -- hl(0, "@table.delimiter.row", { fg = c.dark_gray })
    hl(0, "@table.delimiter.cell", { fg = c.dark_gray })
    hl(0, "@table.cell", { fg = c.fg })
+
+   -- render-markdown.nvim
+   hl(0, "RenderMarkdownH1Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH2Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH3Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH4Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH5Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH6Bg", { fg = "NONE", bg = c.alt_bg })
+   hl(0, "RenderMarkdownH1g", { link = "@text.title.1" })
+   hl(0, "RenderMarkdownH2g", { link = "@text.title.2" })
+   hl(0, "RenderMarkdownH3g", { link = "@text.title.3" })
+   hl(0, "RenderMarkdownH4g", { link = "@text.title.4" })
+   hl(0, "RenderMarkdownH5g", { link = "@text.title.5" })
+   hl(0, "RenderMarkdownH6g", { link = "@text.title.6" })
 
    -- Neorg
    hl(0, "@neorg.headings.1.title", { link = "@text.title.1" })
