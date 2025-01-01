@@ -652,6 +652,21 @@ theme.set_highlights = function()
    hl(0, "BqfPreviewRange", { fg = "NONE", bg = c.ui2_blue })
    hl(0, "BqfSign", { fg = c.ui_orange, bg = "NONE" })
 
+   -- Quickfix
+   hl(0, "qfFileName", { link = 'Directory' })
+   hl(0, "qfSeparatorLeft", { fg = c.light_gray })
+   hl(0, "qfSeparatorRight", { fg = c.light_gray })
+   hl(0, "qfLineNr", { fg = c.gray8 })
+   hl(0, "qfCol", { fg = c.gray8 })
+   hl(0, "qfError", { link = 'DiagnosticError' })
+   hl(0, "qfWarning", { link = 'DiagnosticWarn' })
+   hl(0, "qfInfo", { link = 'DiagnosticInfo' })
+   hl(0, "qfHint", { link = 'DiagnosticHint' })
+   hl(0, "qfNote", { link = 'DiagnosticHint' })
+   hl(0, "qfCode", { fg = c.gray8 })
+   hl(0, "qfText", { link = 'Normal' })
+
+
    -- Cmp
    hl(0, "CmpItemAbbrDeprecated", { fg = c.gray, bg = "NONE", strikethrough = true })
    hl(0, "CmpItemAbbrMatch", { fg = c.ui3_blue, bg = "NONE" })
