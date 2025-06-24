@@ -33,10 +33,10 @@ theme.set_highlights = function()
    hl(0, 'Visual', { fg = 'NONE', bg = c.ui_blue })
    hl(0, 'VisualNOS', { fg = 'NONE', bg = c.alt_bg })
    hl(0, 'WarningMsg', { fg = c.ui_orange, bg = c.bg })
-   hl(0, 'DiffText', { bg = c.sign_delete })
-   hl(0, 'DiffAdd', { bg = c.sign_add })
-   hl(0, 'DiffChange', { bg = c.sign_change })
-   hl(0, 'DiffDelete', { fg = c.gray14, bg = c.sign_delete })
+   hl(0, 'DiffText', { bg = c.sign_delete_bg })
+   hl(0, 'DiffAdd', { bg = c.sign_add_bg })
+   hl(0, 'DiffChange', { bg = c.sign_change_bg })
+   hl(0, 'DiffDelete', { bg = c.sign_delete_bg })
    hl(0, 'QuickFixLine', { fg = 'NONE', bg = c.ui7_blue })
    hl(0, 'PmenuSbar', { fg = 'NONE', bg = c.alt_bg })
    hl(0, 'PmenuThumb', { fg = 'NONE', bg = c.dark_gray })
@@ -269,8 +269,8 @@ theme.set_highlights = function()
    hl(0, '@text.title.6.marker', { fg = c.green })
    hl(0, '@text.title.6.marker', { fg = c.green })
    -- hl(0, "pipe_table_cell", { fg = c.blue})
-   hl(0, '@text.title', { fg = c.blue })
-   hl(0, '@text.title', { fg = '#569CD6' })
+   hl(0, '@text.title', { fg = c.blue }) -- ???
+   hl(0, '@text.title', { fg = '#569CD6' }) -- ???
 
    -- hl(0, "@text.strong", { fg = c.fg, bg = c.ui_blue, bold = false })   -- strong
    -- hl(0, "@markup.italic", { fg = c.blue, italic = true })              -- italic
@@ -279,7 +279,7 @@ theme.set_highlights = function()
    hl(0, '@text.quote', { link = 'Comment' }) -- >> << quatation
    hl(0, '@markup.quote', { fg = c.gray10 }) -- > quatation
    hl(0, '@markup.link', { fg = c.gray }) -- [ ]( )
-   hl(0, '@markup.link.label', { fg = c.vivid_blue, underline = true }) -- [label]
+   hl(0, '@markup.link.label', { fg = c.vivid_blue, underline = false }) -- [label]
    hl(0, '@markup.link.url', { fg = c.fg }) -- [ ](url)
    hl(0, '@list.marker', { fg = c.vivid_blue }) -- - * list
    hl(0, '@list.marker.dot', { fg = c.vivid_blue }) -- 1. 2. 3. numbered list
@@ -301,18 +301,18 @@ theme.set_highlights = function()
    hl(0, '@table.cell', { fg = c.fg })
 
    -- render-markdown.nvim
-   hl(0, 'RenderMarkdownH1Bg', { fg = 'NONE', bg = c.alt_bg }) -- H*Bg colors are overwritten by opts in render-markdown
-   hl(0, 'RenderMarkdownH2Bg', { fg = 'NONE', bg = c.alt_bg })
-   hl(0, 'RenderMarkdownH3Bg', { fg = 'NONE', bg = c.alt_bg })
-   hl(0, 'RenderMarkdownH4Bg', { fg = 'NONE', bg = c.alt_bg })
-   hl(0, 'RenderMarkdownH5Bg', { fg = 'NONE', bg = c.alt_bg })
-   hl(0, 'RenderMarkdownH6Bg', { fg = 'NONE', bg = c.alt_bg })
-   hl(0, 'RenderMarkdownH1', { link = '@text.title.1' }) -- H* colors are overwritten by opts in render-markdown
-   hl(0, 'RenderMarkdownH2', { link = '@text.title.2' })
-   hl(0, 'RenderMarkdownH3', { link = '@text.title.3' })
-   hl(0, 'RenderMarkdownH4', { link = '@text.title.4' })
-   hl(0, 'RenderMarkdownH5', { link = '@text.title.5' })
-   hl(0, 'RenderMarkdownH6', { link = '@text.title.6' })
+   -- hl(0, 'RenderMarkdownH1Bg', { fg = 'NONE', bg = c.alt_bg }) -- H*Bg colors are overwritten by opts in render-markdown
+   -- hl(0, 'RenderMarkdownH2Bg', { fg = 'NONE', bg = c.alt_bg })
+   -- hl(0, 'RenderMarkdownH3Bg', { fg = 'NONE', bg = c.alt_bg })
+   -- hl(0, 'RenderMarkdownH4Bg', { fg = 'NONE', bg = c.alt_bg })
+   -- hl(0, 'RenderMarkdownH5Bg', { fg = 'NONE', bg = c.alt_bg })
+   -- hl(0, 'RenderMarkdownH6Bg', { fg = 'NONE', bg = c.alt_bg })
+   -- hl(0, 'RenderMarkdownH1', { link = '@text.title.1' }) -- H* colors are overwritten by opts in render-markdown
+   -- hl(0, 'RenderMarkdownH2', { link = '@text.title.2' })
+   -- hl(0, 'RenderMarkdownH3', { link = '@text.title.3' })
+   -- hl(0, 'RenderMarkdownH4', { link = '@text.title.4' })
+   -- hl(0, 'RenderMarkdownH5', { link = '@text.title.5' })
+   -- hl(0, 'RenderMarkdownH6', { link = '@text.title.6' })
 
    -- Neorg
    hl(0, '@neorg.headings.1.title', { link = '@text.title.1' })
@@ -450,6 +450,9 @@ theme.set_highlights = function()
    hl(0, 'TelescopePreviewTitle', { fg = c.ui_orange, bg = 'NONE', bold = true })
    hl(0, 'TelescopePromptCounter', { fg = c.red, bg = 'NONE' })
    hl(0, 'TelescopePreviewHyphen', { fg = c.red, bg = 'NONE' })
+   -- Telescope details
+   hl(0, 'TelescopeResultsIdentifier', { fg = '#E0B449', bold = true })
+   hl(0, 'TelescopeResultsNormal', { fg = c.gray12, link = '' })
 
    -- NvimTree
    hl(0, 'NvimTreeFolderIcon', { link = 'Directory' })
@@ -488,7 +491,7 @@ theme.set_highlights = function()
    hl(0, 'NeoTreeEndOfBuffer', { link = 'EndOfBuffer' })
    hl(0, 'NeoTreeFloatBorder', { link = 'FloatBorder' })
    hl(0, 'NeoTreeFloatNormal', { link = 'NormalFloat' })
-   hl(0, 'NeoTreeFloatTitle', { fg = c.fg, bg = c.alt_bg })
+   hl(0, 'NeoTreeFloatTitle', { bold = true, fg = c.blue, bg = c.alt_bg })
    hl(0, 'NeoTreeTitleBar', { fg = c.bg, bg = c.gray })
    hl(0, 'NeoTreeBufferNumber', { link = 'SpecialChar' })
    hl(0, 'NeoTreeDimText', { fg = c.cursor_fg })
@@ -520,10 +523,10 @@ theme.set_highlights = function()
    hl(0, 'NeoTreeGitStaged', { link = 'NeoTreeGitAdded' })
    hl(0, 'NeoTreeGitUnstaged', { link = 'NeoTreeGitConflict' })
    hl(0, 'NeoTreeGitUntracked', { italic = true, fg = c.warn })
-   hl(0, 'NeoTreeTabActive', { bold = true })
-   hl(0, 'NeoTreeTabInactive', { fg = c.gray, bg = c.alt_bg })
-   hl(0, 'NeoTreeTabSeparatorActive', { fg = c.alt_bg })
-   hl(0, 'NeoTreeTabSeparatorInactive', { fg = c.alt_bg, bg = c.alt_bg })
+   hl(0, 'NeoTreeTabActive', { bold = true, fg = c.fg, bg = c.ui_blue })
+   hl(0, 'NeoTreeTabInactive', { fg = c.gray10, bg = c.gray3 })
+   hl(0, 'NeoTreeTabSeparatorActive', { fg = c.alt_bg, bg = c.ui_blue })
+   hl(0, 'NeoTreeTabSeparatorInactive', { fg = c.alt_bg, bg = c.gray3 })
 
    -- Lir
    hl(0, 'LirFloatNormal', { fg = c.fg, bg = c.alt_bg })
