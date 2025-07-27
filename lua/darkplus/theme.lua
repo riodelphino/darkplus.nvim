@@ -15,21 +15,28 @@ theme.set_highlights = function()
    hl(0, 'SpellLocal', { fg = 'NONE', bg = 'NONE', sp = c.green, underline = true })
    hl(0, 'SpellRare', { fg = 'NONE', bg = 'NONE', sp = c.purple, underline = true })
    hl(0, 'NormalNC', { fg = c.fg, bg = c.bg })
-   hl(0, 'Pmenu', { link = '', fg = c.alt_fg, bg = c.menu_bg })
-   hl(0, 'PmenuSel', { fg = 'NONE', bg = c.ui2_blue })
-   hl(0, 'WildMenu', { fg = c.fg, bg = c.ui2_blue })
+   -- Pmenu
+   hl(0, 'Pmenu', { link = '', fg = c.gray12, bg = c.menu_bg }) -- fg = c.alt_fg, bg = c.menu_bg
+   hl(0, 'PmenuSel', { fg = 'NONE', bg = c.ui5_blue })
+   hl(0, 'PmenuSbar', { fg = 'NONE', bg = c.ui5_blue })
+   hl(0, 'PmenuThumb', { fg = 'NONE', bg = c.ui5_blue })
+   hl(0, 'PmenuKind', { fg = 'NONE', bg = c.menu_bg })
+   hl(0, 'PmenuExtra', { fg = 'NONE', bg = c.menu_bg })
+
+   hl(0, 'WildMenu', { fg = c.fg, bg = c.ui5_blue })
    hl(0, 'CursorLineNr', { fg = c.light_gray, bg = 'NONE' })
    hl(0, 'Folded', { fg = c.gray, bg = c.alt_bg })
    hl(0, 'FoldColumn', { fg = c.gray, bg = c.alt_bg })
    hl(0, 'LineNr', { fg = c.gray, bg = 'NONE' })
-   hl(0, 'FloatBorder', { fg = c.gray, bg = c.alt_bg })
    hl(0, 'Whitespace', { fg = c.dark_gray, bg = 'NONE' })
    hl(0, 'VertSplit', { fg = c.gray, bg = c.bg })
    hl(0, 'CursorLine', { fg = 'NONE', bg = c.alt_bg })
    hl(0, 'CursorColumn', { fg = 'NONE', bg = c.alt_bg })
    hl(0, 'ColorColumn', { fg = 'NONE', bg = c.alt_bg })
    -- hl(0, "NormalFloat", { fg = "NONE", bg = c.alt_bg })
-   hl(0, 'NormalFloat', { fg = 'NONE', bg = c.bg })
+   hl(0, 'FloatBorder', { fg = c.gray8, bg = c.menu_bg })
+   hl(0, 'NormalFloat', { fg = c.gray8, bg = c.menu_bg }) -- fg = 'NONE, bg = c.bg
+   hl(0, 'NormalFloatBorder', { fg = c.gray8, bg = c.menu_bg }) -- Custom highlight
    hl(0, 'Visual', { fg = 'NONE', bg = c.ui_blue })
    hl(0, 'VisualNOS', { fg = 'NONE', bg = c.alt_bg })
    hl(0, 'WarningMsg', { fg = c.ui_orange, bg = c.bg })
@@ -38,8 +45,6 @@ theme.set_highlights = function()
    hl(0, 'DiffChange', { bg = c.sign_change_bg })
    hl(0, 'DiffDelete', { bg = c.sign_delete_bg })
    hl(0, 'QuickFixLine', { fg = 'NONE', bg = c.ui7_blue })
-   hl(0, 'PmenuSbar', { fg = 'NONE', bg = c.alt_bg })
-   hl(0, 'PmenuThumb', { fg = 'NONE', bg = c.dark_gray })
    hl(0, 'MatchWord', { fg = 'NONE', bg = c.reference })
    hl(0, 'MatchParen', { fg = c.hint, bg = c.reference })
    hl(0, 'MatchWordCur', { fg = 'NONE', bg = c.reference })
@@ -63,6 +68,9 @@ theme.set_highlights = function()
    hl(0, 'TabLine', { fg = c.light_gray, bg = c.line })
    hl(0, 'TabLineSel', { fg = c.fg, bg = c.line })
    hl(0, 'TabLineFill', { fg = c.line, bg = c.line })
+   -- Window
+   hl(0, 'WinBar', { bg = c.bg })
+   hl(0, 'WinBarNC', { bg = c.bg })
    hl(0, 'WinSeparator', { fg = c.gray6, bg = c.bg })
 
    -- Code
@@ -255,12 +263,13 @@ theme.set_highlights = function()
    -- "#6a9955"
    hl(0, '@text.title', { link = '' }) -- title text after #. This should be unset the link, so the below codes work.
    -- hl(0, "@punctuation.special", { fg = c.ui_orange }) -- # ## ### #### ... NO, this is not only for markdown.
-   hl(0, '@text.title.1', { fg = c.ui_orange, underline = true, bold = true })
+   hl(0, '@text.title.1', { fg = c.ui_orange, underline = false, bold = true })
    hl(0, '@text.title.2', { fg = c.ui_orange, bold = true })
    hl(0, '@text.title.3', { fg = c.ui_orange })
    hl(0, '@text.title.4', { fg = c.ui_orange })
-   hl(0, '@text.title.5', { fg = c.yellow_orange })
-   hl(0, '@text.title.6', { fg = c.yellow_orange })
+   hl(0, '@text.title.5', { fg = c.yellow_orange, bold = false })
+   hl(0, '@text.title.6', { fg = c.yellow_orange, bold = false })
+
    hl(0, '@text.title.1.marker', { fg = c.green })
    hl(0, '@text.title.2.marker', { fg = c.green })
    hl(0, '@text.title.3.marker', { fg = c.green })
@@ -313,6 +322,13 @@ theme.set_highlights = function()
    -- hl(0, 'RenderMarkdownH4', { link = '@text.title.4' })
    -- hl(0, 'RenderMarkdownH5', { link = '@text.title.5' })
    -- hl(0, 'RenderMarkdownH6', { link = '@text.title.6' })
+
+   -- markview.nvim
+   -- hl(0, 'MarkviewPalette1Bg', { bg = c. }) -- H* colors are overwritten by opts in render-markdown
+   -- 'MarkviewPalette1'
+   -- 'MarkviewPalette1Fg'
+   -- 'MarkviewPalette1Bg'
+   -- 'MarkviewPalette1Sign'
 
    -- Neorg
    hl(0, '@neorg.headings.1.title', { link = '@text.title.1' })
@@ -705,6 +721,40 @@ theme.set_highlights = function()
    hl(0, 'CmpFloatBorder', { fg = c.dark_gray })
    hl(0, 'CmpCursorLine', { fg = 'NONE', bg = c.ui_blue })
    hl(0, 'CmpSearch', { link = 'NONE' })
+
+   -- Blink.cmp
+   -- kind
+   hl(0, 'BlinkCmpKindFunction', { fg = c.ui_purple, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindMethod', { fg = c.ui_purple, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindConstructor', { fg = c.ui_orange, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindClass', { fg = c.ui_orange, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindEnum', { fg = c.ui_orange, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindEvent', { fg = c.info, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindInterface', { fg = c.ui_orange, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindStruct', { fg = c.ui_orange, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindVariable', { fg = c.light_blue, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindField', { fg = c.light_blue, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindProperty', { fg = c.light_blue, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindEnumMember', { fg = c.vivid_blue, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindConstant', { fg = c.vivid_blue, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindKeyword', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindModule', { fg = c.cyan, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindValue', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindUnit', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindText', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindSnippet', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindFile', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindFolder', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindColor', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindReference', { fg = c.light_blue, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindOperator', { fg = c.fg, bg = 'NONE' })
+   hl(0, 'BlinkCmpKindTypeParameter', { fg = c.light_blue, bg = 'NONE' })
+
+   -- Pmenuとかにリンクしてるので基本的には不要。Borderだけ薄くしたかったので下記を設定
+   hl(0, 'BlinkCmpMenuBorder', { link = 'NormalFloatBorder' })
+   hl(0, 'BlinkCmpDocBorder', { link = 'NormalFloatBorder' })
+   hl(0, 'BlinkCmpSignatureHelpBorder', { link = 'NormalFloatBorder' })
+   hl(0, 'BlinkCmpDocSeparator', { link = 'NormalFloatBorder' })
 
    -- Navic
    hl(0, 'NavicIconsFile', { link = 'CmpItemKindFile' })
