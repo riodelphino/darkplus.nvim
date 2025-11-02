@@ -1,0 +1,72 @@
+local c = require('darkplus.palette')
+
+-- BufferLine
+-- return {
+--    -- !!! Caution !!!
+--    -- BufferLine has original "configs.highlights" options which has to set colors. Not here.
+--    -- Otherwise web-dev-icon colors will be lost & background is black only.
+--
+--    ['BufferCurrent'] = { fg = c.fg, bg = c.bg },
+--    ['BufferLineFill'] = { fg = c.fg, bg = c.alt_bg },
+--    ['BufferLineBackground'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineBufferVisible'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineBufferSelected'] = { fg = c.fg, bg = c.ui_blue, italic = false },
+--    ['BufferLineBuffer'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineCloseButton'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineCloseButtonSelected'] = { fg = c.fg, bg = c.ui_blue },
+--    ['BufferLineCloseButtonVislble'] = { fg = c.fg, bg = c.tab },
+--    -- "BufferLineTab"
+--    -- "BufferLineTabSelected"
+--    -- "BufferLineTabClose"
+--    -- "BufferLineNumbers"
+--    -- "BufferLineNumbersVisible"
+--    -- "BufferLineNumbersSelected"
+--    -- "BufferLineDiagnostic"
+--    -- "BufferLineDiagnosticVisible"
+--    -- "BufferLineDiagnosticSelected"
+--    -- "BufferLineHint"
+--    -- "BufferLineHintVisible"
+--    -- "BufferLineHintSelected"
+--    -- "BufferLineHintDiagnostic"
+--    -- "BufferLineHintDiagnosticVisible"
+--    -- "BufferLineHintDiagnosticSelected"
+--    -- "BufferLineInfo"
+--    -- "BufferLineInfoVisible"
+--    -- "BufferLineInfoSelected"
+--    -- "BufferLineInfoDiagnostic"
+--    -- "BufferLineInfoDiagnostic_visible"
+--    -- "BufferLineInfoDiagnostic_selected"
+--    -- "BufferLineWarning"
+--    -- "BufferLineWarningVisible"
+--    -- "BufferLineWarningSelected"
+--    -- "BufferLineWarningDiagnostic"
+--    -- "BufferLineWarningDiagnostic_visible"
+--    -- "BufferLineWarningDiagnostic_selected"
+--    -- "BufferLineError"
+--    -- "BufferLineErrorVisible"
+--    -- "BufferLineErrorSelected"
+--    -- "BufferLineErrorDiagnostic"
+--    -- "BufferLineErrorDiagnostic_visible"
+--    -- "BufferLineErrorDiagnostic_selected"
+--    ['BufferLineModified'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineModifiedVisible'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineModifiedSelected'] = { fg = c.fg, bg = c.ui_blue },
+--    ['BufferLineDuplicateSelected'] = { fg = c.green, bg = c.ui_blue },
+--    ['BufferLineDuplicateVisible'] = { fg = c.gray, bg = c.tab },
+--    ['BufferLineDuplicate'] = { fg = c.green, bg = c.tab },
+--    ['BufferLineSeparator'] = { fg = c.alt_bg, bg = c.alt_bg },
+--    ['BufferLineSeparatorSelected'] = { fg = c.alt_bg, bg = c.alt_bg },
+--    ['BufferLineSeparatorVisible'] = { fg = c.alt_bg, bg = c.tab },
+--    ['BufferLineIndicatorSelected'] = { fg = c.fg, bg = c.ui_blue },
+--    ['BufferLineIndicatorVisible'] = { fg = c.fg, bg = c.tab },
+--    -- "BufferLinePickSelected"
+--    -- "BufferLinePickVisible"
+--    -- "BufferLinePick"
+--    -- "BufferLineOffsetSeparator"
+--    ['BufferLineDevIcon'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineDevIconDefault'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineDevIconVisible'] = { fg = c.fg, bg = c.tab },
+--    ['BufferLineDevIconSelected'] = { fg = c.fg, bg = c.ui_blue },
+-- }
+
+return {}
