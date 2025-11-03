@@ -1,4 +1,4 @@
-local c = require('darkplus.palette')
+local c = require('darkplus.palette').colors
 
 -- Set by plugin mql-compile.nvim
 

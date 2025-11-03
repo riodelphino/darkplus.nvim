@@ -1,4 +1,6 @@
-local colors = {
+local M = {}
+
+M.colors = {
    fg = '#D4D4D4',
    bg = '#1E1E1E',
    alt_fg = '#a4a4a4',
@@ -73,4 +75,4 @@ local colors = {
    ui2_purple = '#664062',
 }
 
-return colors
+return M
