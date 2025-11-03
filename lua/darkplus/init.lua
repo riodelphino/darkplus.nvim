@@ -2,49 +2,6 @@ local util = require('darkplus.util')
 
 local M = {}
 
-M.opts = {
-   highlights = {
-      builtins = {
-         'generals',
-      },
-      plugins = {
-         'bfq',
-         'blink',
-         'bookmarks',
-         'bufferline',
-         'cmp',
-         'crate',
-         'dashboard',
-         'diffview',
-         'git',
-         'hop',
-         'indent_blankline',
-         'lazygit',
-         'lir',
-         'markview',
-         'mini',
-         'navic',
-         'neogit',
-         'neorg',
-         'neotree',
-         'noice',
-         'notify',
-         'nvimtree',
-         'packer',
-         'quickfix',
-         'quickscope',
-         'render_markdown',
-         'telescope',
-         'treesitter',
-         'whichkey',
-      },
-      filetypes = {
-         'markdown',
-         'python',
-      },
-   },
-}
-
 M.setup = function()
    vim.cmd('hi clear')
 
@@ -54,7 +11,7 @@ M.setup = function()
    vim.o.termguicolors = true
    vim.g.colors_name = 'darkplus'
 
-   util.set_hl_allall()
+   util.set_hl_all()
 end
 
 return M
