@@ -4,7 +4,7 @@ local c = require('darkplus.palette').colors
 -- return {
 --    -- !!! Caution !!!
 --    -- BufferLine has original "configs.highlights" options which has to set colors. Not here.
---    -- Otherwise web-dev-icon colors will be lost & background is black only.
+--    -- Otherwise web-dev-icon colors will be lost & the background turns to black.
 --
 --    ['BufferCurrent'] = { fg = c.fg, bg = c.bg },
 --    ['BufferLineFill'] = { fg = c.fg, bg = c.alt_bg },
