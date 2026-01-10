@@ -1,5 +1,5 @@
 local defaults = {
-   highlights_groups = { 'builtins', 'plugins', 'filetypes' }, -- Define order
+   highlights_categories = { 'builtins', 'plugins', 'filetypes' }, -- Define order
    highlights = {
       builtins = {
          'generals',

@@ -17,10 +17,10 @@ function M.set_hl_group(hl_list)
 end
 
 function M.set_hl_all()
-   for _, group in ipairs(opts.highlights_groups) do
-      local modules = opts.highlights[group]
+   for _, category in ipairs(opts.highlights_categories) do
+      local modules = opts.highlights[category]
       for _, module_name in ipairs(modules) do
-         local module_path = string.format('darkplus.highlights.%s.%s', group, module_name)
+         local module_path = string.format('darkplus.highlights.%s.%s', category, module_name)
          local hl_list = require(module_path)
          M.set_hl_group(hl_list)
       end
