@@ -1,10 +1,10 @@
 local defaults = {
-   highlights_categories = { 'builtins', 'plugins', 'filetypes' }, -- Define order
-   highlights = {
+   sections_order = { 'builtins', 'plugins', 'filetypes' }, -- Define order
+   modules = {
       builtins = {
          'generals',
       },
-      plugins = {
+      plugins = { -- Remove or comment out to disable it / Add new module name to register it
          'bfq',
          'blink',
          'bookmarks',

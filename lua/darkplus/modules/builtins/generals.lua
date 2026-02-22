@@ -9,7 +9,6 @@ return {
    MsgSeparator = { fg = c.fg, bg = c.bg },
    NormalNC = { fg = c.fg, bg = c.bg },
    LineNr = { fg = c.gray, bg = nil },
-   CursorLineNr = { fg = c.light_gray, bg = nil },
    Folded = { fg = c.gray, bg = c.alt_bg },
    FoldColumn = { fg = c.gray, bg = c.alt_bg },
    Whitespace = { fg = c.dark_gray, bg = nil },
@@ -27,8 +26,9 @@ return {
    CursorIM = { fg = c.cursor_fg, bg = c.cursor_bg },
    TermCursor = { fg = c.cursor_fg, bg = c.cursor_bg },
    TermCursorNC = { fg = c.cursor_fg, bg = c.cursor_bg },
-   CursorLine = { fg = nil, bg = c.alt_bg },
-   CursorColumn = { fg = nil, bg = c.alt_bg },
+   CursorLine = { fg = nil, bg = c.alt_bg2 },
+   CursorLineNr = { fg = c.light_gray, bg = c.alt_bg2 },
+   CursorColumn = { fg = nil, bg = c.alt_bg2 },
 
    -- Mode
    Visual = { fg = nil, bg = c.ui_blue },
