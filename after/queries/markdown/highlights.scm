@@ -49,6 +49,27 @@
   (paragraph (inline) @markup.list.pending.text)
 )
 
+; NOT WORKS (Tried to markup code_span in checked list)
+; (list_item
+;   (task_list_marker_checked)
+;   (paragraph
+;     (inline
+;       (code_span) @markup.list.checked.code_span))
+; )
+
+; (list_item
+;   (task_list_marker_unchecked)
+;   (paragraph
+;     (inline
+;       (code_span) @markup.list.unchecked.text))
+; )
+; (list_item
+;   (task_list_marker_pending)
+;   (paragraph
+;     (inline
+;       (code_span) @markup.list.pending.text))
+; )
+
 ; pending -- doesn't work, because [-] is not parsed by TS.
 ; (list_item
 ;   (

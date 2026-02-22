@@ -136,7 +136,7 @@ return {
    ['@markup.heading.6.marker'] = { fg = c.green },
 
    ['@markup.italic'] = { fg = c.blue, italic = true }, -- italic
-   ['@markup.strong'] = { fg = c.fg, bg = c.ui_blue, bold = false }, -- strong
+   ['@markup.strong'] = { fg = c.fg, bg = c.ui_blue, bold = true }, -- strong
    ['@markup.quote'] = { fg = c.gray10 }, -- > quatation
    ['@markup.link'] = { fg = c.gray }, -- [ ]( )
    ['@markup.link.label'] = { fg = c.vivid_blue, underline = false }, -- [label]
