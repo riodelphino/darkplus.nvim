@@ -44,10 +44,12 @@
   (task_list_marker_unchecked) ; @markup.list.unchecked ; listed twice, so omit
   (paragraph (inline) @markup.list.unchecked.text)
 )
-(list_item
-  (task_list_marker_pending) @markup.list.pending
-  (paragraph (inline) @markup.list.pending.text)
-)
+
+; 2026-04-13 Error on nvim v0.12~
+; (list_item
+;   (task_list_marker_pending) @markup.list.pending
+;   (paragraph (inline) @markup.list.pending.text)
+; )
 
 ; NOT WORKS (Tried to markup code_span in checked list)
 ; (list_item
