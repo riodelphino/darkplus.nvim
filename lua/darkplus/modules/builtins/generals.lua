@@ -15,7 +15,7 @@ return {
    VertSplit = { fg = c.gray, bg = c.bg },
    ColorColumn = { fg = nil, bg = c.alt_bg },
    Conceal = { fg = c.gray, bg = nil },
-   Directory = { fg = c.folder_blue, bg = nil },
+   Directory = { fg = c.folder, bg = nil },
    SpecialKey = { fg = c.blue, bg = nil, bold = true },
    EndOfBuffer = { fg = c.bg, bg = nil },
    NonText = { fg = c.gray8, bg = nil },

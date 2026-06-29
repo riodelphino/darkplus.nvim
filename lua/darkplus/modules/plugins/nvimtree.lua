@@ -8,7 +8,7 @@ return {
    NvimTreeVertSplit = { fg = c.alt_bg, bg = c.alt_bg },
    NvimTreeWinSeparator = { fg = c.alt_bg, bg = c.alt_bg },
    NvimTreeFolderName = { link = 'Directory' },
-   NvimTreeOpenedFolderName = { fg = c.folder_blue, bg = nil, bold = true, italic = true },
+   NvimTreeOpenedFolderName = { fg = c.folder, bg = nil, bold = true, italic = true },
    NvimTreeEmptyFolderName = { fg = c.gray, bg = nil, italic = true },
    NvimTreeGitIgnored = { fg = c.gray, bg = nil, italic = true },
    NvimTreeImageFile = { fg = c.light_gray, bg = nil },

@@ -6,7 +6,7 @@ return {
    MiniIconsGrey = { fg = c.gray },
    MiniIconsPurple = { fg = c.purple },
    MiniIconsBlue = { fg = c.blue },
-   MiniIconsAzure = { fg = c.folder_blue },
+   MiniIconsAzure = { fg = c.dark_blue },
    MiniIconsCyan = { fg = c.cyan },
    MiniIconsGreen = { fg = c.green },
    MiniIconsYellow = { fg = c.yellow },
