@@ -29,20 +29,39 @@ M.colors = {
    context = '#606060',
    light_gray = '#cccccc',
    menu_bg = '#1E1E1E', -- '#222222', '#1E1E1E','#282828', '#303030', "#202123",
+
    red = '#D16969',
+   light_red = '#E8A0A0',
+   dark_red = '#8B1A1A',
+
    blue = '#569CD6',
-   vivid_blue = '#4FC1FF',
    light_blue = '#9CDCFE',
-   green = '#74975c', -- "#6A9955",
+   dark_blue = '#1F3F6E',
+
+   green = '#74975C',
    light_green = '#B5CEA8',
+   dark_green = '#3A6B35',
+
    cyan = '#4EC9B0',
-   orange = '#CE9178', -- if brighter "#CE9F89"
+   light_cyan = '#A8D8CF',
+   dark_cyan = '#1E7A6A',
+
    yellow = '#DCDCAA',
-   yellow_orange = '#D7BA7D',
+   light_yellow = '#EEECCC',
+   dark_yellow = '#B8A840',
+
+   orange = '#CE9178',
+   light_orange = '#D7BA7D',
+   dark_orange = '#A05C3A',
+
    purple = '#C586C0',
    light_purple = '#B180D7',
    dark_purple = '#664062',
+
    magenta = '#D16D9E',
+   light_magenta = '#E8A0C4',
+   dark_magenta = '#7A2D54',
+
    cursor_fg = '#515052',
    cursor_bg = '#AEAFAD',
    sign_add = '#587c0c',
@@ -63,7 +82,8 @@ M.colors = {
    hint_bg = '#22323f',
    reference = '#363636',
    success_green = '#14C50B',
-   folder_blue = '#42A5F5',
+   folder = '#42A5F5',
+   link = '#42A5F5',
    ui_blue = '#264F78',
    ui2_blue = '#042E48',
    ui3_blue = '#0195F7',
