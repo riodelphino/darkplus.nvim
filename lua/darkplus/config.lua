@@ -44,6 +44,7 @@ local defaults = {
          'json',
          'toml',
          'xml',
+         'zsh',
       },
    },
 }

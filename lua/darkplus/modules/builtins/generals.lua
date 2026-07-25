@@ -279,6 +279,4 @@ return {
 
    -- Language
    hclTSPunctSpecial = { fg = c.alt_fg, bg = nil },
-   zshKSHFunction = { link = 'Function' },
-   zshVariableDef = { link = 'Constant' },
 }
