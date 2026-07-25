@@ -45,6 +45,7 @@ local defaults = {
          'toml',
          'xml',
          'zsh',
+         'hcl',
       },
    },
 }
