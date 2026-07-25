@@ -43,6 +43,7 @@ local defaults = {
          'sass',
          'json',
          'toml',
+         'xml',
       },
    },
 }
