@@ -38,6 +38,8 @@ local defaults = {
       filetypes = {
          'markdown',
          'python',
+         'css',
+         'sass',
       },
    },
 }
