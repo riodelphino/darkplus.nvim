@@ -42,6 +42,7 @@ local defaults = {
          'css',
          'sass',
          'json',
+         'toml',
       },
    },
 }
