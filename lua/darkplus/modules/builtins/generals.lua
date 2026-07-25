@@ -281,11 +281,7 @@ return {
    xmlTag = { fg = c.cyan, bg = nil },
    xmlTagName = { fg = c.cyan, bg = nil },
    xmlEndTag = { fg = c.cyan, bg = nil },
-   -- yamlPlainScalar = { fg = c.orange, bg = nil },
-   -- yamlTSField = { fg = c.blue, bg = nil },
    hclTSPunctSpecial = { fg = c.alt_fg, bg = nil },
-   yamlBlockMappingKey = { fg = c.blue, bg = nil },
-   tomlTSProperty = { fg = c.blue, bg = nil },
    zshKSHFunction = { link = 'Function' },
    zshVariableDef = { link = 'Constant' },
 }
