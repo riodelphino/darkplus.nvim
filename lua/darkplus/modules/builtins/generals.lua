@@ -278,9 +278,6 @@ return {
    DapBreakpoint = { fg = c.error, bg = nil },
 
    -- Language
-   xmlTag = { fg = c.cyan, bg = nil },
-   xmlTagName = { fg = c.cyan, bg = nil },
-   xmlEndTag = { fg = c.cyan, bg = nil },
    hclTSPunctSpecial = { fg = c.alt_fg, bg = nil },
    zshKSHFunction = { link = 'Function' },
    zshVariableDef = { link = 'Constant' },
