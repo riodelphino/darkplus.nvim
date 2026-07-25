@@ -276,7 +276,4 @@ return {
    SniprunVirtualTextErr = { fg = c.error, bg = nil },
    SniprunFloatingWinErr = { fg = c.error, bg = nil },
    DapBreakpoint = { fg = c.error, bg = nil },
-
-   -- Language
-   hclTSPunctSpecial = { fg = c.alt_fg, bg = nil },
 }
