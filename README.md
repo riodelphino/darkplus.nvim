@@ -13,8 +13,11 @@ Darkplus inspired colorscheme written in lua.
 
 ## Install
 
+lazy.nvim:
 ```lua
-use "lunarvim/darkplus.nvim"
+{
+   "riodelphino/darkplus.nvim"
+}
 ```
 
 ## Activate
