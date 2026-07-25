@@ -284,7 +284,6 @@ return {
    -- yamlPlainScalar = { fg = c.orange, bg = nil },
    -- yamlTSField = { fg = c.blue, bg = nil },
    hclTSPunctSpecial = { fg = c.alt_fg, bg = nil },
-   jsonKeyword = { fg = c.blue, bg = nil },
    yamlBlockMappingKey = { fg = c.blue, bg = nil },
    tomlTSProperty = { fg = c.blue, bg = nil },
    zshKSHFunction = { link = 'Function' },

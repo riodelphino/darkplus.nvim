@@ -41,6 +41,7 @@ local defaults = {
          'html',
          'css',
          'sass',
+         'json',
       },
    },
 }
