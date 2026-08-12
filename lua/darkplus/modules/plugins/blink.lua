@@ -3,14 +3,14 @@ local c = require('darkplus.palette').colors
 -- Blink.cmp
 return {
    -- kind
-   BlinkCmpKindFunction = { fg = c.ui_purple, bg = nil },
-   BlinkCmpKindMethod = { fg = c.ui_purple, bg = nil },
-   BlinkCmpKindConstructor = { fg = c.ui_orange, bg = nil },
-   BlinkCmpKindClass = { fg = c.ui_orange, bg = nil },
-   BlinkCmpKindEnum = { fg = c.ui_orange, bg = nil },
+   BlinkCmpKindFunction = { fg = c.light_purple, bg = nil },
+   BlinkCmpKindMethod = { fg = c.light_purple, bg = nil },
+   BlinkCmpKindConstructor = { fg = c.accent_fg, bg = nil },
+   BlinkCmpKindClass = { fg = c.accent_fg, bg = nil },
+   BlinkCmpKindEnum = { fg = c.accent_fg, bg = nil },
    BlinkCmpKindEvent = { fg = c.info, bg = nil },
-   BlinkCmpKindInterface = { fg = c.ui_orange, bg = nil },
-   BlinkCmpKindStruct = { fg = c.ui_orange, bg = nil },
+   BlinkCmpKindInterface = { fg = c.accent_fg, bg = nil },
+   BlinkCmpKindStruct = { fg = c.accent_fg, bg = nil },
    BlinkCmpKindVariable = { fg = c.light_blue, bg = nil },
    BlinkCmpKindField = { fg = c.light_blue, bg = nil },
    BlinkCmpKindProperty = { fg = c.light_blue, bg = nil },

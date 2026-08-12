@@ -46,8 +46,8 @@ return {
    NeoTreeGitStaged = { link = 'NeoTreeGitAdded' },
    NeoTreeGitUnstaged = { link = 'NeoTreeGitConflict' },
    NeoTreeGitUntracked = { italic = true, fg = c.warn },
-   NeoTreeTabActive = { bold = true, fg = c.fg, bg = c.ui_blue },
-   NeoTreeTabInactive = { fg = c.gray10, bg = c.gray3 },
-   NeoTreeTabSeparatorActive = { fg = c.alt_bg, bg = c.ui_blue },
-   NeoTreeTabSeparatorInactive = { fg = c.alt_bg, bg = c.gray3 },
+   NeoTreeTabActive = { bold = true, fg = c.fg, bg = c.selection_bg },
+   NeoTreeTabInactive = { fg = c.gray10, bg = c.gray03 },
+   NeoTreeTabSeparatorActive = { fg = c.alt_bg, bg = c.selection_bg },
+   NeoTreeTabSeparatorInactive = { fg = c.alt_bg, bg = c.gray03 },
 }

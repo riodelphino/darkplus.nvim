@@ -4,6 +4,6 @@ local c = require('darkplus.palette').colors
 return {
    BookmarkSign = { fg = c.sign_change, bg = nil },
    BookmarkAnnotationSign = { fg = c.sign_change_alt, bg = nil },
-   BookmarkLine = { fg = nil, bg = c.ui2_blue },
-   BookmarkAnnotationLine = { fg = nil, bg = c.ui2_blue },
+   BookmarkLine = { fg = nil, bg = c.list_select_bg },
+   BookmarkAnnotationLine = { fg = nil, bg = c.list_select_bg },
 }

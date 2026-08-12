@@ -11,7 +11,7 @@ return {
    NvimTreeOpenedFolderName = { fg = c.folder, bg = nil, bold = true, italic = true },
    NvimTreeEmptyFolderName = { fg = c.gray, bg = nil, italic = true },
    NvimTreeGitIgnored = { fg = c.gray, bg = nil, italic = true },
-   NvimTreeImageFile = { fg = c.light_gray, bg = nil },
+   NvimTreeImageFile = { fg = c.gray12, bg = nil },
    NvimTreeSpecialFile = { fg = c.orange, bg = nil },
    NvimTreeEndOfBuffer = { fg = c.alt_bg, bg = nil },
    NvimTreeCursorLine = { fg = nil, bg = c.line },

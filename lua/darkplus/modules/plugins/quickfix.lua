@@ -5,15 +5,15 @@ local c = require('darkplus.palette').colors
 -- Quickfix
 return {
    -- qfFileName = { link = 'Directory' },
-   -- qfSeparatorLeft = { fg = c.light_gray },
-   -- qfSeparatorRight = { fg = c.light_gray },
-   -- qfLineNr = { fg = c.gray8 },
-   -- qfCol = { fg = c.gray8 },
+   -- qfSeparatorLeft = { fg = c.gray12 },
+   -- qfSeparatorRight = { fg = c.gray12 },
+   -- qfLineNr = { fg = c.gray08 },
+   -- qfCol = { fg = c.gray08 },
    -- qfError = { link = 'DiagnosticError' },
    -- qfWarning = { link = 'DiagnosticWarn' },
    -- qfInfo = { link = 'DiagnosticInfo' },
    -- qfHint = { link = 'DiagnosticHint' },
    -- qfNote = { link = 'DiagnosticHint' },
-   -- qfCode = { fg = c.gray8 },
+   -- qfCode = { fg = c.gray08 },
    -- qfText = { link = 'Normal' },
 }

@@ -71,19 +71,19 @@ return {
    -- Markup (Old: `@text.*` → New: `@markup.*`)
 
    -- Font
-   ['@markup.strong'] = { fg = c.fg, bg = c.ui_blue, bold = true },
+   ['@markup.strong'] = { fg = c.fg, bg = c.selection_bg, bold = true },
    ['@markup.italic'] = { fg = c.blue, italic = true },
    ['@markup.underline'] = { link = 'Underlined' },
    ['@markup.strikethrough'] = { strikethrough = true },
 
    -- Heading
    ['@markup.heading'] = { link = 'Title' },
-   ['@markup.heading.1'] = { fg = c.ui_orange, bold = true },
-   ['@markup.heading.2'] = { fg = c.ui_orange, bold = true },
-   ['@markup.heading.3'] = { fg = c.ui_orange },
-   ['@markup.heading.4'] = { fg = c.ui_orange },
-   ['@markup.heading.5'] = { fg = c.yellow_orange },
-   ['@markup.heading.6'] = { fg = c.yellow_orange },
+   ['@markup.heading.1'] = { fg = c.accent_fg, bold = true },
+   ['@markup.heading.2'] = { fg = c.accent_fg, bold = true },
+   ['@markup.heading.3'] = { fg = c.accent_fg },
+   ['@markup.heading.4'] = { fg = c.accent_fg },
+   ['@markup.heading.5'] = { fg = c.light_orange },
+   ['@markup.heading.6'] = { fg = c.light_orange },
    ['@markup.heading.1.marker'] = { fg = c.green },
    ['@markup.heading.2.marker'] = { fg = c.green },
    ['@markup.heading.3.marker'] = { fg = c.green },
@@ -104,8 +104,8 @@ return {
    ['@markup.link.label'] = { fg = c.link }, -- [label]()
 
    -- List
-   ['@markup.list.checked'] = { fg = c.gray6, bold = true }, -- [x] task list checked
-   ['@markup.list.checked.text'] = { fg = c.gray6 },
+   ['@markup.list.checked'] = { fg = c.gray06, bold = true }, -- [x] task list checked
+   ['@markup.list.checked.text'] = { fg = c.gray06 },
    ['@markup.list.unchecked'] = { fg = c.magenta, bold = true }, -- [ ] task list unchecked
    ['@markup.list.unchecked.text'] = { fg = c.fg },
    -- *** TS doesn't parse this, so cannot markup. NEED custom parser ***
@@ -118,9 +118,9 @@ return {
 
    -- Table (Replaced to render-markdown.nvim)
    ['@table'] = { fg = c.gray },
-   ['@table.header'] = { fg = c.gray, bg = c.ui_blue },
+   ['@table.header'] = { fg = c.gray, bg = c.selection_bg },
    ['@table.header.cell'] = { fg = c.fg, bold = false },
-   -- ['@table.row'] = { fg = c.ui_blue },
+   -- ['@table.row'] = { fg = c.selection_bg },
    -- ['@table.delimiter.row'] = { fg = c.dark_gray },
    ['@table.delimiter.cell'] = { fg = c.dark_gray },
    ['@table.cell'] = { fg = c.fg },

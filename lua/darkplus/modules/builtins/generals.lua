@@ -18,7 +18,7 @@ return {
    Directory = { fg = c.folder, bg = nil },
    SpecialKey = { fg = c.blue, bg = nil, bold = true },
    EndOfBuffer = { fg = c.bg, bg = nil },
-   NonText = { fg = c.gray8, bg = nil },
+   NonText = { fg = c.gray08, bg = nil },
 
    -- Cursor
    Cursor = { fg = c.cursor_fg, bg = c.cursor_bg },
@@ -27,11 +27,11 @@ return {
    TermCursor = { fg = c.cursor_fg, bg = c.cursor_bg },
    TermCursorNC = { fg = c.cursor_fg, bg = c.cursor_bg },
    CursorLine = { fg = nil, bg = c.alt_bg2 },
-   CursorLineNr = { fg = c.light_gray, bg = c.alt_bg2 },
+   CursorLineNr = { fg = c.gray12, bg = c.alt_bg2 },
    CursorColumn = { fg = nil, bg = c.alt_bg2 },
 
    -- Mode
-   Visual = { fg = nil, bg = c.ui_blue },
+   Visual = { fg = nil, bg = c.selection_bg },
    VisualNOS = { fg = nil, bg = c.alt_bg },
 
    -- Msg / Comment / Diagnostic
@@ -43,9 +43,9 @@ return {
    Ignore = { fg = c.magenta, bg = nil, bold = true },
 
    -- Search
-   Search = { fg = nil, bg = c.ui5_blue },
-   IncSearch = { fg = nil, bg = c.ui2_orange },
-   Substitute = { fg = nil, bg = c.ui2_orange },
+   Search = { fg = nil, bg = c.search_bg },
+   IncSearch = { fg = nil, bg = c.incsearch_bg },
+   Substitute = { fg = nil, bg = c.incsearch_bg },
 
    -- Match
    MatchWord = { fg = nil, bg = c.reference },
@@ -55,7 +55,7 @@ return {
 
    -- Message
    ErrorMsg = { fg = c.error, bg = c.bg, bold = true },
-   WarningMsg = { fg = c.ui_orange, bg = c.bg },
+   WarningMsg = { fg = c.accent_fg, bg = c.bg },
    MoreMsg = { fg = c.orange, bg = nil },
    Question = { fg = c.orange, bg = nil },
 
@@ -108,7 +108,7 @@ return {
 
    -- Special / Symbol
    Special = { fg = c.orange, bg = nil },
-   SpecialChar = { fg = c.yellow_orange, bg = nil },
+   SpecialChar = { fg = c.light_orange, bg = nil },
    Delimiter = { fg = c.fg, bg = nil },
    Tag = { fg = c.blue, bg = nil },
 
@@ -119,29 +119,29 @@ return {
    Underlined = { fg = nil, bg = nil, underline = true },
 
    -- Tab
-   TabLine = { fg = c.light_gray, bg = c.line },
+   TabLine = { fg = c.gray12, bg = c.line },
    TabLineSel = { fg = c.fg, bg = c.line },
    TabLineFill = { fg = c.line, bg = c.line },
 
    -- Win
    WinBar = { bg = c.bg },
    WinBarNC = { bg = c.bg },
-   WinSeparator = { fg = c.gray6, bg = c.bg },
+   WinSeparator = { fg = c.gray06, bg = c.bg },
 
    -- Float
    NormalFloat = { fg = c.gray11, bg = c.menu_bg },
-   NormalFloatBorder = { fg = c.gray8, bg = c.menu_bg },
-   FloatBorder = { fg = c.gray8, bg = c.menu_bg },
+   NormalFloatBorder = { fg = c.gray08, bg = c.menu_bg },
+   FloatBorder = { fg = c.gray08, bg = c.menu_bg },
 
    -- Pmenu / WildMenu
    Pmenu = { link = '', fg = c.gray11, bg = c.menu_bg },
-   PmenuSel = { fg = nil, bg = c.ui5_blue },
-   PmenuSbar = { fg = nil, bg = c.ui5_blue },
-   PmenuThumb = { fg = nil, bg = c.ui5_blue },
+   PmenuSel = { fg = nil, bg = c.search_bg },
+   PmenuSbar = { fg = nil, bg = c.search_bg },
+   PmenuThumb = { fg = nil, bg = c.search_bg },
    PmenuKind = { fg = c.gray11, bg = c.menu_bg },
    PmenuExtra = { fg = c.gray11, bg = c.menu_bg },
-   WildMenu = { fg = c.fg, bg = c.ui5_blue },
-   QuickFixLine = { fg = nil, bg = c.ui7_blue },
+   WildMenu = { fg = c.fg, bg = c.search_bg },
+   QuickFixLine = { fg = nil, bg = c.quickfix_bg },
 
    -- Buffer
    BufferCurrent = { fg = c.fg, bg = c.bg },
@@ -186,7 +186,7 @@ return {
    DiagnosticInfo = { fg = c.info, bg = nil },
    DiagnosticWarn = { fg = c.warn, bg = nil },
    DiagnosticError = { fg = c.error, bg = nil },
-   DiagnosticOther = { fg = c.ui_purple, bg = nil },
+   DiagnosticOther = { fg = c.light_purple, bg = nil },
    DiagnosticSignHint = { link = 'DiagnosticHint' },
    DiagnosticSignInfo = { link = 'DiagnosticInfo' },
    DiagnosticSignWarn = { link = 'DiagnosticWarn' },
@@ -268,7 +268,7 @@ return {
    diffFile = { fg = c.alt_bg, bg = nil },
    diffNewFile = { fg = c.green, bg = nil },
    diffOldFile = { fg = c.red, bg = nil },
-   debugPc = { fg = nil, bg = c.ui5_blue },
+   debugPc = { fg = nil, bg = c.search_bg },
    debugBreakpoint = { fg = c.red, bg = nil, reverse = true },
    CodiVirtualText = { fg = c.hint, bg = nil },
    SniprunVirtualTextOk = { fg = c.hint, bg = nil },
