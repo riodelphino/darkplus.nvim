@@ -1,6 +1,6 @@
 local c = require('darkplus.palette').colors
 
--- Bqf
+-- Bqf (nvim-bqf)
 return {
    BqfPreviewBorder = { fg = c.fg, bg = nil },
    BqfPreviewRange = { fg = nil, bg = c.list_select_bg },

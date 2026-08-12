@@ -1,12 +1,5 @@
 local c = require('darkplus.palette').colors
 
 -- markview.nvim
--- return {
---    ['MarkviewPalette1Bg'] = { bg = c. }, -- H* colors are overwritten by opts in render-markdown
---    -- 'MarkviewPalette1'
---    -- 'MarkviewPalette1Fg'
---    -- 'MarkviewPalette1Bg'
---    -- 'MarkviewPalette1Sign'
--- }
-
+-- TODO: not implemented yet. Candidate groups: MarkviewPalette1..4 (+Fg/Bg/Sign).
 return {}

@@ -5,9 +5,9 @@ local defaults = {
          'generals',
       },
       plugins = { -- Remove or comment out to disable it / Add new module name to register it
-         'bfq',
          'blink',
          'bookmarks',
+         'bqf',
          'bufferline',
          'cmp',
          'crate',
@@ -27,7 +27,6 @@ local defaults = {
          'noice',
          'notify',
          'nvimtree',
-         'packer',
          'quickfix',
          'quickscope',
          'render_markdown',

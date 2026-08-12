@@ -103,7 +103,7 @@ M.colors = {
    quickfix_bg = '#223344', -- QuickFixLine
    incsearch_bg = '#613214', -- IncSearch, Substitute
    match_fg = '#0195F7', -- matched text in completion menu (cmp)
-   info_fg = '#75BEFF', -- notify INFO icon/title, packer hash/success
+   info_fg = '#75BEFF', -- notify INFO icon/title
    accent_fg = '#E8AB53', -- titles, headings, warning text, completion "kind" icons
 }
 

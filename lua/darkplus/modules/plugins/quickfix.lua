@@ -1,8 +1,6 @@
 local c = require('darkplus.palette').colors
 
--- Set by plugin mql-compile.nvim
-
--- Quickfix
+-- Quickfix (native Neovim quickfix window groups)
 return {
    -- qfFileName = { link = 'Directory' },
    -- qfSeparatorLeft = { fg = c.gray12 },
